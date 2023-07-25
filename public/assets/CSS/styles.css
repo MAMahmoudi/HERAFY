@@ -1,0 +1,328 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ToolBar{
+    position: sticky;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    color: white;
+    background-color: green;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.NavBar{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.NavBarBtn{
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.NavBarBtn:hover{
+    color: red;
+}
+
+.ToolBarSearch{
+    width: 400px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 17px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.Main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-top: 0px;
+}
+
+.Description{
+    width: 200px;
+    height: 50px;
+}
+
+.from{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.AccountLogin{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    box-shadow: 10px 10px 20px #888888;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #f2f2f2;
+    justify-content: center;
+    padding-left: 0%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.Email_Password{
+    outline: none;
+    border: none;
+    
+    height: 40px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid rgb(9, 232, 9);
+    background: transparent;
+    text-align: center;
+    display: block;
+    font-size: 17px;
+}
+
+.LoginBtn{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 80%;
+    background-color: #03632e;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1px 20px;
+    margin: 10px auto;
+}
+
+.CreateAccountBtn{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 80%;
+    background-color: rgb(9, 232, 9);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1px 20px;
+    margin: 10px auto;
+    
+}
+
+.CreateAccountBtn:hover, .LoginBtn:hover {
+    background-color: #ff7800;
+    color: white;
+}
+
+.Create_Account_Btn{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Ad{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    background-color: #f2edf3;
+    margin: 50px;
+}
+
+.DishAd{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    box-shadow: 10px 10px 20px #888888;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #f2f2f2;
+    justify-content: baseline;
+    justify-items: flex-start;
+}
+
+.DishMaker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.DishDescription{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.ReadMoreBtn{
+    color:  rgb(9, 232, 9);
+    background-color: transparent;
+    border-color:  rgb(9, 232, 9);
+    outline: none;
+    height: 40px;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 1px 20px;
+    margin: 10px auto;
+}
+
+.ReadMoreBtn:hover{
+    background-color:  rgb(9, 232, 9);
+    color: white;
+}
+
+.DishInfo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 0px;
+}
+
+.footer-section{
+    margin: 50px;
+}
+
+.UserSpace{
+    display: flex;
+    background-color: #f2edf3;
+}
+
+.Cover_Image{
+    height: 450px;
+    background-color:rgb(9, 232, 9);
+}
+
+.User_Pic{
+    margin-top: -100px;
+    border-radius: 200px;
+    border:solid 3px white;
+    margin-left: 80px;
+    z-index: 1;
+    position: absolute;
+}
+
+.LeftNavBar{
+    background-color: white;
+    min-height: 800px;
+    flex: 1;
+    margin: 20px;
+    border: solid thin #aaa;
+    padding: 10px;
+}
+
+.Posts{
+    background-color:#f2edf3;
+    min-height: 800px;
+    flex: 3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.PostingPanel{
+    border: solid thin #aaa;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.Post_Text_Area{
+    width: 100%;
+    border: none;
+    font-family:tahoma;
+    font-size: 14;
+}
+
+.Post_Btn{
+    float: right;
+    padding: 4px;
+    font-size:large;
+    border-radius: 2px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #03632e;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Post_Btn:hover{
+    background-color: #ff7800;
+    color: white;
+}
+
+.TimeLine{
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.Single_Post{
+    display: flex;
+    padding: 10px;
+    font-size: 13;
+
+}
+
+.LeftNavBarList{
+
+
+}
+
+.LeftNavBarListItems{
+
+}
+
+.warning{
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
