@@ -52,7 +52,7 @@ HERAFY
 
 ### Do they want general information / research (such as background on a topic / company), or are they after something specific (such as a particular fact or information on a product)?
 
-### Are they already familiar with the service or product that you offer or do they need to be introduced to it?
+### Are they already familiar with the service or product you offer or need to be introduced to it?
 
 ### Are they looking for time sensitive information, such as the latest news or updates on a particular topic?
 

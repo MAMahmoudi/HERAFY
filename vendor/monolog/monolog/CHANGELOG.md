@@ -1,3 +1,46 @@
+### 3.3.1 (2023-02-06)
+
+  * Fixed Logger not being serializable anymore (#1792)
+
+### 3.3.0 (2023-02-06)
+
+  * Deprecated FlowdockHandler & Formatter as the flowdock service was shutdown (#1748)
+  * Added `ClosureContextProcessor` to allow delaying the creation of context data by setting a Closure in context which is called when the log record is used (#1745)
+  * Added an ElasticsearchHandler option to set the `op_type` to `create` instead of the default `index` (#1766)
+  * Added support for enum context values in PsrLogMessageProcessor (#1773)
+  * Added graylog2/gelf-php 2.x support (#1747)
+  * Improved `BrowserConsoleHandler` logging to use more appropriate methods than just console.log in the browser (#1739)
+  * Fixed GitProcessor not filtering correctly based on Level (#1749)
+  * Fixed `WhatFailureGroupHandler` not catching errors happening inside `close()` (#1791)
+  * Fixed datetime field in `GoogleCloudLoggingFormatter` (#1758)
+  * Fixed infinite loop detection within Fibers (#1753)
+  * Fixed `AmqpHandler->setExtraAttributes` not working with buffering handler wrappers (#1781)
+
+### 3.2.0 (2022-07-24)
+
+  * Deprecated `CubeHandler` and `PHPConsoleHandler` as both projects are abandoned and those should not be used anymore (#1734)
+  * Marked `Logger` `@final` as it should not be extended, prefer composition or talk to us if you are missing something
+  * Added RFC 5424 level (`7` to `0`) support to `Logger::log` and `Logger::addRecord` to increase interoperability (#1723)
+  * Added `SyslogFormatter` to output syslog-like files which can be consumed by tools like [lnav](https://lnav.org/) (#1689)
+  * Added support for `__toString` for objects which are not json serializable in `JsonFormatter` (#1733)
+  * Added `GoogleCloudLoggingFormatter` (#1719)
+  * Added support for Predis 2.x (#1732)
+  * Added `AmqpHandler->setExtraAttributes` to allow configuring attributes when using an AMQPExchange (#1724)
+  * Fixed serialization/unserialization of handlers to make sure private properties are included (#1727)
+  * Fixed allowInlineLineBreaks in LineFormatter causing issues with windows paths containing `\n` or `\r` sequences (#1720)
+  * Fixed max normalization depth not being taken into account when formatting exceptions with a deep chain of previous exceptions (#1726)
+  * Fixed PHP 8.2 deprecation warnings (#1722)
+  * Fixed rare race condition or filesystem issue where StreamHandler is unable to create the directory the log should go into yet it exists already (#1678)
+
+### 3.1.0 (2022-06-09)
+
+  * Added `$datetime` parameter to `Logger::addRecord` as low level API to allow logging into the past or future (#1682)
+  * Added `Logger::useLoggingLoopDetection` to allow disabling cyclic logging detection in concurrent frameworks (#1681)
+  * Fixed handling of fatal errors if callPrevious is disabled in ErrorHandler (#1670)
+  * Fixed interop issue by removing the need for a return type in ProcessorInterface (#1680)
+  * Marked the reusable `Monolog\Test\TestCase` class as `@internal` to make sure PHPStorm does not show it above PHPUnit, you may still use it to test your own handlers/etc though (#1677)
+  * Fixed RotatingFileHandler issue when the date format contained slashes (#1671)
+
 ### 3.0.0 (2022-05-10)
 
 Changes from RC1
@@ -40,6 +83,43 @@ New deprecations:
   to Monolog or one of its handlers, or `Level::Warning->value` if you need the integer
   value equal to what `Logger::WARNING` was giving you.
 - `Logger::getLevelName()` is now deprecated.
+
+### 2.9.1 (2023-02-06)
+
+  * Fixed Logger not being serializable anymore (#1792)
+
+### 2.9.0 (2023-02-05)
+
+  * Deprecated FlowdockHandler & Formatter as the flowdock service was shutdown (#1748)
+  * Added support for enum context values in PsrLogMessageProcessor (#1773)
+  * Added graylog2/gelf-php 2.x support (#1747)
+  * Improved `BrowserConsoleHandler` logging to use more appropriate methods than just console.log in the browser (#1739)
+  * Fixed `WhatFailureGroupHandler` not catching errors happening inside `close()` (#1791)
+  * Fixed datetime field in `GoogleCloudLoggingFormatter` (#1758)
+  * Fixed infinite loop detection within Fibers (#1753)
+  * Fixed `AmqpHandler->setExtraAttributes` not working with buffering handler wrappers (#1781)
+
+### 2.8.0 (2022-07-24)
+
+  * Deprecated `CubeHandler` and `PHPConsoleHandler` as both projects are abandoned and those should not be used anymore (#1734)
+  * Added RFC 5424 level (`7` to `0`) support to `Logger::log` and `Logger::addRecord` to increase interoperability (#1723)
+  * Added support for `__toString` for objects which are not json serializable in `JsonFormatter` (#1733)
+  * Added `GoogleCloudLoggingFormatter` (#1719)
+  * Added support for Predis 2.x (#1732)
+  * Added `AmqpHandler->setExtraAttributes` to allow configuring attributes when using an AMQPExchange (#1724)
+  * Fixed serialization/unserialization of handlers to make sure private properties are included (#1727)
+  * Fixed allowInlineLineBreaks in LineFormatter causing issues with windows paths containing `\n` or `\r` sequences (#1720)
+  * Fixed max normalization depth not being taken into account when formatting exceptions with a deep chain of previous exceptions (#1726)
+  * Fixed PHP 8.2 deprecation warnings (#1722)
+  * Fixed rare race condition or filesystem issue where StreamHandler is unable to create the directory the log should go into yet it exists already (#1678)
+
+### 2.7.0 (2022-06-09)
+
+  * Added `$datetime` parameter to `Logger::addRecord` as low level API to allow logging into the past or future (#1682)
+  * Added `Logger::useLoggingLoopDetection` to allow disabling cyclic logging detection in concurrent frameworks (#1681)
+  * Fixed handling of fatal errors if callPrevious is disabled in ErrorHandler (#1670)
+  * Marked the reusable `Monolog\Test\TestCase` class as `@internal` to make sure PHPStorm does not show it above PHPUnit, you may still use it to test your own handlers/etc though (#1677)
+  * Fixed RotatingFileHandler issue when the date format contained slashes (#1671)
 
 ### 2.6.0 (2022-05-10)
 

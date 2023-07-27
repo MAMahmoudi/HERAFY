@@ -12,10 +12,10 @@
 namespace Monolog\Handler;
 
 use DateTimeInterface;
-use Monolog\Level;
 use Monolog\Handler\SyslogUdp\UdpSocket;
-use Monolog\Utils;
+use Monolog\Level;
 use Monolog\LogRecord;
+use Monolog\Utils;
 
 /**
  * A Handler for logging to a remote syslogd server.
@@ -48,7 +48,7 @@ class SyslogUdpHandler extends AbstractSyslogHandler
      * @param  bool                      $bubble   Whether the messages that are handled can bubble up the stack or not
      * @param  string                    $ident    Program name or tag for each log message.
      * @param  int                       $rfc      RFC to format the message for.
-     * @throws MissingExtensionException
+     * @throws MissingExtensionException when there is no socket extension
      *
      * @phpstan-param self::RFC* $rfc
      */

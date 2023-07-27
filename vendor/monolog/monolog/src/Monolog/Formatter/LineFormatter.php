@@ -37,6 +37,8 @@ class LineFormatter extends NormalizerFormatter
      * @param string|null $format                The format of the message
      * @param string|null $dateFormat            The format of the timestamp: one supported by DateTime::format
      * @param bool        $allowInlineLineBreaks Whether to allow inline line breaks in log entries
+     *
+     * @throws \RuntimeException If the function json_encode does not exist
      */
     public function __construct(?string $format = null, ?string $dateFormat = null, bool $allowInlineLineBreaks = false, bool $ignoreEmptyContextAndExtra = false, bool $includeStacktraces = false)
     {
@@ -149,6 +151,12 @@ class LineFormatter extends NormalizerFormatter
 
         if (($previous = $e->getPrevious()) instanceof \Throwable) {
             do {
+                $depth++;
+                if ($depth > $this->maxNormalizeDepth) {
+                    $str .= '\n[previous exception] Over ' . $this->maxNormalizeDepth . ' levels deep, aborting normalization';
+                    break;
+                }
+
                 $str .= "\n[previous exception] " . $this->formatException($previous);
             } while ($previous = $previous->getPrevious());
         }
@@ -176,7 +184,11 @@ class LineFormatter extends NormalizerFormatter
     {
         if ($this->allowInlineLineBreaks) {
             if (0 === strpos($str, '{')) {
-                return str_replace(['\r', '\n'], ["\r", "\n"], $str);
+                $str = preg_replace('/(?<!\\\\)\\\\[rn]/', "\n", $str);
+                if (null === $str) {
+                    $pcreErrorCode = preg_last_error();
+                    throw new \RuntimeException('Failed to run preg_replace: ' . $pcreErrorCode . ' / ' . Utils::pcreLastErrorMessage($pcreErrorCode));
+                }
             }
 
             return $str;

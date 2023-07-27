@@ -63,6 +63,9 @@ class GelfMessageFormatter extends NormalizerFormatter
         };
     }
 
+    /**
+     * @throws \RuntimeException
+     */
     public function __construct(?string $systemName = null, ?string $extraPrefix = null, string $contextPrefix = 'ctxt_', ?int $maxLength = null)
     {
         if (!class_exists(Message::class)) {
@@ -71,11 +74,11 @@ class GelfMessageFormatter extends NormalizerFormatter
 
         parent::__construct('U.u');
 
-        $this->systemName = (is_null($systemName) || $systemName === '') ? (string) gethostname() : $systemName;
+        $this->systemName = (null === $systemName || $systemName === '') ? (string) gethostname() : $systemName;
 
-        $this->extraPrefix = is_null($extraPrefix) ? '' : $extraPrefix;
+        $this->extraPrefix = null === $extraPrefix ? '' : $extraPrefix;
         $this->contextPrefix = $contextPrefix;
-        $this->maxLength = is_null($maxLength) ? self::DEFAULT_MAX_LENGTH : $maxLength;
+        $this->maxLength = null === $maxLength ? self::DEFAULT_MAX_LENGTH : $maxLength;
     }
 
     /**
@@ -109,14 +112,6 @@ class GelfMessageFormatter extends NormalizerFormatter
 
         if (isset($record->channel)) {
             $message->setAdditional('facility', $record->channel);
-        }
-        if (isset($extra['line'])) {
-            $message->setAdditional('line', $extra['line']);
-            unset($extra['line']);
-        }
-        if (isset($extra['file'])) {
-            $message->setAdditional('file', $extra['file']);
-            unset($extra['file']);
         }
 
         foreach ($extra as $key => $val) {

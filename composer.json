@@ -2,10 +2,17 @@
     "name": "mamahmoudi/herafy",
     "version": "1.0.0",
     "require": {
-        "monolog/monolog": "3.0.*"
+        "monolog/monolog": "3.4.0"
     },
     "autoload": {
         "psr-4": {"App\\": "app"}
-    }
+    },
+    "authors": [
+        {
+            "name": "M. Amine Mahmoudi",
+            "email": "mohamed.mahmoudi@ensia.edu.dz"
+        }
+    ]
+    
 }
 

@@ -57,7 +57,7 @@ class PsrLogMessageProcessor implements ProcessorInterface
                 continue;
             }
 
-            if (is_null($val) || is_scalar($val) || (is_object($val) && method_exists($val, "__toString"))) {
+            if (null === $val || is_scalar($val) || (is_object($val) && method_exists($val, "__toString"))) {
                 $replacements[$placeholder] = $val;
             } elseif ($val instanceof \DateTimeInterface) {
                 if (null === $this->dateFormat && $val instanceof \Monolog\DateTimeImmutable) {
@@ -67,6 +67,8 @@ class PsrLogMessageProcessor implements ProcessorInterface
                 } else {
                     $replacements[$placeholder] = $val->format($this->dateFormat ?? static::SIMPLE_DATE);
                 }
+            } elseif ($val instanceof \UnitEnum) {
+                $replacements[$placeholder] = $val instanceof \BackedEnum ? $val->value : $val->name;
             } elseif (is_object($val)) {
                 $replacements[$placeholder] = '[object '.Utils::getClass($val).']';
             } elseif (is_array($val)) {

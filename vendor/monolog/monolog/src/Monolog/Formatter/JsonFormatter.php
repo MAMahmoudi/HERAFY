@@ -11,6 +11,7 @@
 
 namespace Monolog\Formatter;
 
+use Stringable;
 use Throwable;
 use Monolog\LogRecord;
 
@@ -37,6 +38,8 @@ class JsonFormatter extends NormalizerFormatter
 
     /**
      * @param self::BATCH_MODE_* $batchMode
+     *
+     * @throws \RuntimeException If the function json_encode does not exist
      */
     public function __construct(int $batchMode = self::BATCH_MODE_JSON, bool $appendNewline = true, bool $ignoreEmptyContextAndExtra = false, bool $includeStacktraces = false)
     {
@@ -139,6 +142,8 @@ class JsonFormatter extends NormalizerFormatter
 
     /**
      * Normalizes given $data.
+     *
+     * @return null|scalar|array<mixed[]|scalar|null|object>|object
      */
     protected function normalize(mixed $data, int $depth = 0): mixed
     {
@@ -162,12 +167,25 @@ class JsonFormatter extends NormalizerFormatter
             return $normalized;
         }
 
-        if ($data instanceof \DateTimeInterface) {
-            return $this->formatDate($data);
-        }
+        if (is_object($data)) {
+            if ($data instanceof \DateTimeInterface) {
+                return $this->formatDate($data);
+            }
 
-        if ($data instanceof Throwable) {
-            return $this->normalizeException($data, $depth);
+            if ($data instanceof Throwable) {
+                return $this->normalizeException($data, $depth);
+            }
+
+            // if the object has specific json serializability we want to make sure we skip the __toString treatment below
+            if ($data instanceof \JsonSerializable) {
+                return $data;
+            }
+
+            if ($data instanceof Stringable) {
+                return $data->__toString();
+            }
+
+            return $data;
         }
 
         if (is_resource($data)) {
