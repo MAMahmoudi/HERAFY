@@ -4,29 +4,53 @@ HERAFY
 
 # 1. Who is this website for?
 
+This website is for people who are looking for a craftsman to do a job for them. For example, a plumber, electrician, carpenter, etc.
+
+This website is also for craftsmen who are looking for a job. They can register on the website and create a profile. They can also create a portfolio of their work. The websuite helps craftsmen to share their work with others. This way, they can show their abilities and skills to others.
+
+It can also be used by companies to promote their products and services. They can create a profile and share their products and services with others. They can sponsor some craftsmen to promote their products and services.
+
 ## 1.1 Tergeted individuals:
+
+The individuals that are targeted by this website are: customers and craftsmen.
 
 ### What is the age range of your target audience?
 
+This website is mainly for adults people. The age range of the target audience is between 20 and 80 years old.
+
 ### Will your site appeal to more women or men? What is the mix?
+
+This website may appeal more to men than women. Maybe a mix of 70% men and 30% women.
 
 ### Which country do your visitors live in?
 
+This website is for people who live in the Algeria.
+
 ### Do they live in urban or rural areas?
+
+People using this website are either from urban or rural areas. But most of them are from urban areas.
 
 ### What is the average income of visitors?
 
+The average income of visitors is very large, but at least from middle class. It is for people who can afford to pay for the services of a craftsman.
+
 ### What level of education do they have?
 
-### What is their marital or family status?
+No specific level of education is required to use this website.
 
 ### What is their occupation?
+
+The occupation of visitors is very diverse. They can be unemployees, employees, craftsmen, etc.
 
 ### How many hours do they work per week?
 
 ### How often do they use the web?
 
+For craftsmen, they use it everytime to look for potential jobs. However, ordinary people use it rarely, when they need a job to be done.
+
 ### What kind of device do they use to access the web?
+
+They use a computer, a tablet or a smartphone. But most of them use a smartphone.
 
 ## 1.2 Tergeted companies:
 

@@ -12,7 +12,8 @@
             "name": "M. Amine Mahmoudi",
             "email": "mohamed.mahmoudi@ensia.edu.dz"
         }
-    ]
-    
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.2"
+    }
 }
-
