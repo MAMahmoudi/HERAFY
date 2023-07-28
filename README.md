@@ -54,23 +54,43 @@ They use a computer, a tablet or a smartphone. But most of them use a smartphone
 
 ## 1.2 Tergeted companies:
 
+The targeted companies are companies that sells products, tools and materials that are used by craftsmen. They can also be companies that offer services that are used by craftsmen.
+
 ### What is the size of the company or relevant department?
+
+The size of the company is usually very large. It can be a small company or a large company.
 
 ### What is the position of people in the company who visit your site?
 
+Usually, the people who visit this website are the managers of the company. The company can also chose any employee to be their representative for the website.
+
 ### Will visitors be using the site for themselves or for someone else?
 
+Visitors will be using the site for themselves. It can not be used for someone else. For example, a company can not use this website for another company. This is what the wibesite is for.
+
 ### How large is the budget they control?
+
+The budget they control is very large. Companies providing construction products and services have a very large budget.
 
 # 2. Why people visit this website?
 
 ## 2.1 Key motivations:
 
+People: find a craftsman for a specific task.
+Craftsmen: show thier abilities to do things.
+Companies: promote their products and services.
+
 ### Are they looking for general entertainment or do they need to achieve a specific goal?
+
+This website is not for entertainment. Visitors are looking for a specific goal.
 
 ### If there is a specific goal, is it a personal or professional one?
 
+It is both professional and personal goal. Visitors are looking for a craftsman to do a job for them. While, companies and craftsmen are looking for promoting their products or skills.
+
 ### Do they see spending time on this activity as essential or a luxury?
+
+It may be both. Some visitors are looking for a specific goal to acheive. While others are there just for curiosity.
 
 ## 2.2 Specific goals:
 

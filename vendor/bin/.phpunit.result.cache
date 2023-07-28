@@ -1,1 +1,1 @@
-{"version":1,"defects":{"First_Test::testTrueAssertsToTrue":7},"times":{"First_Test::testTrueAssertsToTrue":0.021}}
+{"version":1,"defects":{"First_Test::testTrueAssertsToTrue":7,"test_Controller::test_view":8,"test_Controller::test_model":8},"times":{"First_Test::testTrueAssertsToTrue":0.021,"test_Controller::test_view":0.454,"test_Controller::test_model":0.001}}
