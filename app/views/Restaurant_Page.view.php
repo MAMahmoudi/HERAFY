@@ -30,7 +30,7 @@
 
         <!-- User space -->
         <div class="UserSpace">
-            <div class="LeftNavBar">
+            <aside class="LeftNavBar">
                 <ul class="LeftNavBarList">
                     <li class="LeftNavBarListItems">Item</li>
                     <li class="LeftNavBarListItems">Item</li>
@@ -38,9 +38,7 @@
                     <li class="LeftNavBarListItems">Item</li>
                     <li class="LeftNavBarListItems">Item</li>
                 </ul>
-
-
-            </div>
+            </aside>
             <div class="Posts">
                 <div class="PostingPanel">
                     <textarea name="Post_Text_Area" placeholder="What's in your mind" cols="30" rows="10" class="Post_Text_Area"></textarea>
