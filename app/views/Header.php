@@ -9,11 +9,9 @@
     <nav class="NavBar">
         <button class="NavBarBtn">Products</button>
         <button class="NavBarBtn">Restaurents</button>
-        <button class="NavBarBtn">Café</button>
+        <button class="NavBarBtn">الرئيسية</button>
     </nav>
 
-    <div class="ToolBarBtn">
-        <input type="text" placeholder="Search for your favorite restaurant or dish" class="ToolBarSearch">
-    </div>
+   
 
 </header>

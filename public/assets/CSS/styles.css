@@ -11,11 +11,11 @@ body{
 }
 
 .ToolBar{
-    position: sticky;
+    position: fixed;
     top:0; left:0; right:0;
     z-index: 1000;
     color: white;
-    background-color: green;
+    background: rgba(0, 0, 0, 0.6);
     height: 50px;
     padding: 10px;
     display: flex;
@@ -49,20 +49,39 @@ body{
     color: red;
 }
 
-.ToolBarSearch{
+.SearchServices{
+    align-items: center;
+    position: relative;
+}
+
+.SearchServicesTxtField{
     width: 400px;
-    height: 25px;
-    border-radius: 25px;
+    height: 40px;
     background-color: #f2f2f2;
     text-align: center;
     font-size: 17px;
     background-image: url(../images/search.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
 }
+
+.ServiceContainer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ServiceName{
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.ServiceImg{}
 
 .Cover{
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .Description{
@@ -154,12 +173,11 @@ hr{
     margin-right: 20px;
 }
 
-.Ad{
+.Services{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-items: center;
     justify-content: space-around;
-    background-color: #f2edf3;
     margin: 50px;
 }
 
