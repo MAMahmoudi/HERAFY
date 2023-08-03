@@ -1,5 +1,6 @@
 <?php
 
+
 class Account_User
 {
     use Model;

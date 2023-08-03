@@ -1,4 +1,7 @@
 <?php
+
+namespace app\core;
+
 session_start();
 
 class App

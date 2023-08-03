@@ -1,8 +1,11 @@
 <?php
 
+namespace app\core;
+
+
 spl_autoload_register(function ($classname) {
 
-    require("../app/models/" . ucfirst($classname) . ".model.php");
+    require("./app/models/" . ucfirst($classname) . ".model.php");
 });
 require_once('Controller.php');
 require_once('config.php');

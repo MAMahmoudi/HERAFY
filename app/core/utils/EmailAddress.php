@@ -1,5 +1,7 @@
 <?php
 
+namespace app\core\utils;
+
 class EmailAddress
 {
     public $localPart;

@@ -1,5 +1,7 @@
 <?php
 
+namespace app\core;
+
 function Clean_String($My_String)
 {
     $My_String = trim($My_String);

@@ -1,5 +1,8 @@
 <?php
 
+namespace app\core;
+
+
 // All constants are defined here
 $server_name = (isset($_SERVER['SERVER_NAME']));
 if ($server_name == 'localhost') {

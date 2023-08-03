@@ -1,5 +1,7 @@
 <?php
 
+
+
 trait DataBase_Connection
 {
     private $Connection;

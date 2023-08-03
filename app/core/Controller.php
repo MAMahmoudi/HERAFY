@@ -1,4 +1,7 @@
 <?php
+
+namespace app\core;
+
 require_once('config.php');
 
 class Controller
