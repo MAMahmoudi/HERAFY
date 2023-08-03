@@ -1,7 +1,8 @@
 <?php
 
 // All constants are defined here
-if ($_SERVER['SERVER_NAME'] == 'localhost') {
+$server_name = (isset($_SERVER['SERVER_NAME']));
+if ($server_name == 'localhost') {
     define('My_Files_Root', 'http://localhost:8080/HERAFY/public/');
     define('My_Server_Name', 'localhost');
     define('My_DataBase_Connection_User', 'root');

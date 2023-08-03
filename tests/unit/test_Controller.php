@@ -1,6 +1,6 @@
 <?php
 
-require('../app/core/Controller.php');
+require('./app/core/Controller.php');
 
 
 class test_Controller extends \PHPUnit\Framework\TestCase

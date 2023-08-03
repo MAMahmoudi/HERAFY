@@ -1,1 +1,1 @@
-{"version":1,"defects":{"First_Test::testTrueAssertsToTrue":7},"times":{"First_Test::testTrueAssertsToTrue":0.022}}
+{"version":1,"defects":{"First_Test::testTrueAssertsToTrue":7,"EmailAddressTest::testLocalPart":7},"times":{"First_Test::testTrueAssertsToTrue":0.022,"EmailAddressTest::testLocalPart":0.007,"EmailAddressTest::testDomain":0.045}}
