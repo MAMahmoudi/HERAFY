@@ -5,20 +5,25 @@ require_once('./app/core/utils/EmailAddress.php');
 
 class EmailAddressTest extends \PHPUnit\Framework\TestCase
 {
+    protected $EmailAddress;
+
+    public function setUp(): void
+    {
+        $this->EmailAddress = new \app\core\utils\EmailAddress("mohamed.mahmoudi@ensia.edu.dz");
+    }
     public function __constructor($name)
     {
         parent::__construct($name);
     }
+
     function testLocalPart()
     {
-        $email = new EmailAddress("mohamed.mahmoudi@ensia.edu.dz");
         // check that the local part of the address is equal to ‘george’
-        $this->assertTrue($email->localPart == 'mohamed.mahmoudi');
+        $this->assertTrue($this->EmailAddress->localPart == 'mohamed.mahmoudi');
     }
     public function testDomain()
     {
-        $email = new EmailAddress("mohamed.mahmoudi@ensia.edu.dz");
-        $this->assertEquals($email->domain, 'ensia.edu.dz');
+        $this->assertEquals($this->EmailAddress->domain, 'ensia.edu.dz');
     }
 }
 
