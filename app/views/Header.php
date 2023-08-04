@@ -3,13 +3,13 @@
         <img src="<?= My_Files_Root ?>assets/images/White_Logo.png" alt="Logo" height="40">
     </a>
 
-    <nav class="NavBar">
-        <ul>
-            <li class="NavBarBtn">الرئيسية</li>
-            <li class="NavBarBtn">خدمات</li>
-            <li class="NavBarBtn">مشاريع</li>
-            <li class="NavBarBtn">جديد</li>
-            <li class="NavBarBtn">إتصل بنا</li>
+    <nav>
+        <ul class="NavBarList">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">خدمات</a></li>
+            <li><a href="#">مشاريع</a></li>
+            <li><a href="#">جديد</a></li>
+            <li><a href="#">إتصل بنا</a></li>
         </ul>
     </nav>
 

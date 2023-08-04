@@ -29,19 +29,29 @@ body {
   height: 20px;
 }
 
-.NavBar {
+.NavBarList {
   display: flex;
+  list-style-type: none;
   direction: rtl;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.NavBarBtn {
-  background-color: transparent;
-  list-style: none;
-  display: inline-block;
-  font-size: 30px;
-  min-width: 150px;
+.NavBarList > li {
+  margin-top: 0px;
+}
+
+.NavBarList > li > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.3em 1em;
+}
+
+.NavBarList > li > a:hover {
+  border-bottom: #ffb600 2px solid;
 }
 
 .Login_Btn {
