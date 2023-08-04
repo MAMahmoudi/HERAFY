@@ -12,7 +12,7 @@ class Controller
             extract($My_Data);
         }
 
-        $FilePath = './app/views/' . $view . '.view.php';
+        $FilePath = '../app/views/' . $view . '.view.php';
         require_once($FilePath);
     }
 
@@ -24,7 +24,7 @@ class Controller
             return new $model();
         } else {
             //if there is no page then route to 404 error
-            require('./app/views/404.view.php');
+            require('../app/views/404.view.php');
         }
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
@@ -29,7 +29,7 @@
             </div>
 
             <div class="MostSearchedServices">
-                
+
                 <div class="ServiceContainer">
                     <!-- <div class="ServiceName">Service1</div>  -->
                     <img src="<?= My_Files_Root ?>assets/images/services/service1.jpg" alt="Service1" class="ServiceImg" height="300px" width="250px">

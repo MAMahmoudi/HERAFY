@@ -1,6 +1,7 @@
 <?php
+
 // This is a controller
-class Home extends Controller
+class Home extends \app\core\Controller
 {
     public function index()
     {

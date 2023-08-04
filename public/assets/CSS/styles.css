@@ -1,341 +1,341 @@
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    display: block;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 
-.ToolBar{
-    position: fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Poppins', sans-serif;
+.ToolBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
-.NavBar{
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+.Logo {
+  height: 20px;
 }
 
-.NavBarBtn{
-    display: inline-block;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    padding-left: 30px;
-    padding-right: 30px;
+.NavBar {
+  display: flex;
+  direction: rtl;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.NavBarBtn:hover{
-    color: red;
+.NavBarBtn {
+  background-color: transparent;
+  list-style: none;
+  display: inline-block;
+  font-size: 30px;
+  min-width: 150px;
 }
 
-.SearchServices{
-    align-items: center;
-    position: relative;
+.Login_Btn {
+  background-color: #ffb600;
+  color: #23282d;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 40px;
 }
 
-.SearchServicesTxtField{
-    width: 400px;
-    height: 40px;
-    background-color: #f2f2f2;
-    text-align: center;
-    font-size: 17px;
-    background-image: url(../images/search.png);
-    background-repeat: no-repeat;
-    background-position: left;
+.Login_Btn:hover {
+  color: #ffb600;
+  background-color: #23282d;
 }
 
-.ServiceContainer{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.SearchServices {
+  align-items: center;
+  position: relative;
 }
 
-.ServiceName{
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
+.SearchServicesTxtField {
+  width: 400px;
+  height: 40px;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 17px;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
-.ServiceImg{}
-
-.Cover{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.ServiceContainer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.Description{
-    width: 200px;
-    height: 50px;
+.ServiceName {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
-.from{
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-items: center;
-    display: flex;
-    flex-direction: column;
+.ServiceImg {
+  background-color: #03632e;
 }
 
-.AccountLogin{
-    display:flex;
-    flex-direction: column;
-    width: 350px;
-    height: 450px;
-    box-shadow: 10px 10px 20px #888888;
-    border-radius: 30px;
-    align-items: center;
-    background-color: #f2f2f2;
-    justify-content: center;
-    padding-left: 0%;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-top: 30px;
+.Cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.Email_Password{
-    outline: none;
-    border: none;
-    
-    height: 40px;
-    background-color: #f2f2f2;
-    border-bottom: 1px solid rgb(9, 232, 9);
-    background: transparent;
-    text-align: center;
-    display: block;
-    font-size: 17px;
+.Description {
+  width: 200px;
+  height: 50px;
 }
 
-.LoginBtn{
-    border: none;
-    outline: none;
-    height: 40px;
-    width: 80%;
-    background-color: #03632e;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 1px 20px;
-    margin: 10px auto;
+.from {
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.CreateAccountBtn{
-    border: none;
-    outline: none;
-    height: 40px;
-    width: 80%;
-    background-color: rgb(9, 232, 9);
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 1px 20px;
-    margin: 10px auto;
-    
+.AccountLogin {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  box-shadow: 10px 10px 20px #888888;
+  border-radius: 30px;
+  align-items: center;
+  background-color: #f2f2f2;
+  justify-content: center;
+  padding-left: 0%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
-.CreateAccountBtn:hover, .LoginBtn:hover {
-    background-color: #ff7800;
-    color: white;
+.Email_Password {
+  outline: none;
+  border: none;
+
+  height: 40px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid rgb(9, 232, 9);
+  background: transparent;
+  text-align: center;
+  display: block;
+  font-size: 17px;
 }
 
-.Create_Account_Btn{
-    text-decoration: none;
-    color: white;
+.LoginBtn {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 80%;
+  background-color: #03632e;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 1px 20px;
+  margin: 10px auto;
 }
 
-hr{
-    margin-left: 20px;
-    margin-right: 20px;
+.CreateAccountBtn {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 80%;
+  background-color: rgb(9, 232, 9);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 1px 20px;
+  margin: 10px auto;
 }
 
-.Services{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: space-around;
-    margin: 50px;
+.CreateAccountBtn:hover,
+.LoginBtn:hover {
+  background-color: #ff7800;
+  color: white;
 }
 
-.DishAd{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 600px;
-    box-shadow: 10px 10px 20px #888888;
-    border-radius: 30px;
-    align-items: center;
-    background-color: #f2f2f2;
-    justify-content: baseline;
-    justify-items: flex-start;
+.Create_Account_Btn {
+  text-decoration: none;
+  color: white;
 }
 
-.DishMaker{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px;
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.DishDescription{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    margin-right: 15px;
+.Services {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-around;
+  margin: 50px;
 }
 
-.ReadMoreBtn{
-    color:  rgb(9, 232, 9);
-    background-color: transparent;
-    border-color:  rgb(9, 232, 9);
-    outline: none;
-    height: 40px;
-    width: 40%;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 1px 20px;
-    margin: 10px auto;
+.DishAd {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 600px;
+  box-shadow: 10px 10px 20px #888888;
+  border-radius: 30px;
+  align-items: center;
+  background-color: #f2f2f2;
+  justify-content: baseline;
+  justify-items: flex-start;
 }
 
-.ReadMoreBtn:hover{
-    background-color:  rgb(9, 232, 9);
-    color: white;
+.DishMaker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.DishInfo{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 0px;
+.DishDescription {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.footer-section{
-    margin: 50px;
+.ReadMoreBtn {
+  color: rgb(9, 232, 9);
+  background-color: transparent;
+  border-color: rgb(9, 232, 9);
+  outline: none;
+  height: 40px;
+  width: 40%;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 1px 20px;
+  margin: 10px auto;
 }
 
-.UserSpace{
-    display: flex;
-    background-color: #f2edf3;
+.ReadMoreBtn:hover {
+  background-color: rgb(9, 232, 9);
+  color: white;
 }
 
-.Cover_Image{
-    height: 450px;
-    background-color:rgb(9, 232, 9);
+.DishInfo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 0px;
 }
 
-.User_Pic{
-    margin-top: -100px;
-    border-radius: 200px;
-    border:solid 3px white;
-    margin-left: 80px;
-    z-index: 1;
-    position: absolute;
+.footer-section {
+  margin: 50px;
 }
 
-.LeftNavBar{
-    background-color: white;
-    min-height: 800px;
-    flex: 1;
-    margin: 20px;
-    border: solid thin #aaa;
-    padding: 10px;
+.UserSpace {
+  display: flex;
+  background-color: #f2edf3;
 }
 
-.Posts{
-    background-color:#f2edf3;
-    min-height: 800px;
-    flex: 3;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+.Cover_Image {
+  height: 450px;
+  background-color: rgb(9, 232, 9);
 }
 
-.PostingPanel{
-    border: solid thin #aaa;
-    padding: 10px;
-    background-color: white;
-
+.User_Pic {
+  margin-top: -100px;
+  border-radius: 200px;
+  border: solid 3px white;
+  margin-left: 80px;
+  z-index: 1;
+  position: absolute;
 }
 
-.Post_Text_Area{
-    width: 100%;
-    border: none;
-    font-family:tahoma;
-    font-size: 14;
+.LeftNavBar {
+  background-color: white;
+  min-height: 800px;
+  flex: 1;
+  margin: 20px;
+  border: solid thin #aaa;
+  padding: 10px;
 }
 
-.Post_Btn{
-    float: right;
-    padding: 4px;
-    font-size:large;
-    border-radius: 2px;
-    width: 80px;
-    height: 40px;
-    border: none;
-    outline: none;
-    background-color: #03632e;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
+.Posts {
+  background-color: #f2edf3;
+  min-height: 800px;
+  flex: 3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.Post_Btn:hover{
-    background-color: #ff7800;
-    color: white;
+.PostingPanel {
+  border: solid thin #aaa;
+  padding: 10px;
+  background-color: white;
 }
 
-.TimeLine{
-    background-color: white;
-    margin-top: 20px;
-    padding: 10px;
+.Post_Text_Area {
+  width: 100%;
+  border: none;
+  font-family: tahoma;
+  font-size: 14;
 }
 
-.Single_Post{
-    display: flex;
-    padding: 10px;
-    font-size: 13;
-
+.Post_Btn {
+  float: right;
+  padding: 4px;
+  font-size: large;
+  border-radius: 2px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #03632e;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-.LeftNavBarList{
-
-
+.Post_Btn:hover {
+  background-color: #ff7800;
+  color: white;
 }
 
-.LeftNavBarListItems{
-
+.TimeLine {
+  background-color: white;
+  margin-top: 20px;
+  padding: 10px;
 }
 
-.warning{
-    color: red;
-    font-size: 12px;
-    margin-left: 10px;
+.Single_Post {
+  display: flex;
+  padding: 10px;
+  font-size: 13;
+}
+
+.warning {
+  color: red;
+  font-size: 12px;
+  margin-left: 10px;
 }
