@@ -39,6 +39,8 @@ body {
 
 .NavBarList > li {
   margin-top: 0px;
+  display: inline-block;
+  position: relative;
 }
 
 .NavBarList > li > a {
@@ -47,11 +49,61 @@ body {
   color: white;
   font-size: 20px;
   font-weight: 700;
-  padding: 0.3em 1em;
+  text-align: center;
+  padding: 0.3em 2em 0.5em 1.5em;
+}
+
+.NavBarList > li::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border: 0.3em solid;
+  border-color: #ffb600 transparent transparent;
+}
+
+.DropDownMenu > li {
+  display: block;
+}
+
+.DropDownMenu > li > a:hover {
+  border-bottom: #ffb600 2px solid;
+}
+
+.DropDownMenu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.NavBarList > li:hover .DropDownMenu {
+  display: block;
+}
+
+.NavBarList > li:hover .NavBarList > li::after {
+  top: 0.7em;
+  border-color: transparent transparent #ffb600;
 }
 
 .NavBarList > li > a:hover {
   border-bottom: #ffb600 2px solid;
+}
+
+.NavBarList > li > ul {
+  list-style-type: none;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.DropDownMenu > li > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.3em 1em;
 }
 
 .Login_Btn {
