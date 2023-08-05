@@ -31,13 +31,26 @@
             <div class="MostSearchedServices">
 
                 <div class="ServiceContainer">
-                    <!-- <div class="ServiceName">Service1</div>  -->
-                    <img src="<?= My_Files_Root ?>assets/images/services/service1.jpg" alt="Service1" class="ServiceImg" height="300px" width="250px">
+                    <h3>Service1</h3>
                 </div>
 
                 <div class="ServiceContainer">
-                    <!-- <div class="ServiceName">Service1</div>  -->
-                    <img src="<?= My_Files_Root ?>assets/images/services/service1.jpg" alt="Service1" class="ServiceImg" height="300px" width="250px">
+                    <h3>Service1</h3>
+                </div>
+
+                <div class="ServiceContainer">
+                    <h3>Service1</h3>
+                </div>
+                <div class="ServiceContainer">
+                    <h3>Service1</h3>
+                </div>
+
+                <div class="ServiceContainer">
+                    <h3>Service1</h3>
+                </div>
+
+                <div class="ServiceContainer">
+                    <h3>Service1</h3>
                 </div>
 
             </div>
