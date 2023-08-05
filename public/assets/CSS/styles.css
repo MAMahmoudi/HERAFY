@@ -59,7 +59,7 @@ body {
   right: 1em;
   top: 1em;
   border: 0.3em solid;
-  border-color: #ffb600 transparent transparent;
+  border-color: transparent #ffb600 transparent transparent;
 }
 
 .DropDownMenu > li {
@@ -82,9 +82,8 @@ body {
   display: block;
 }
 
-.NavBarList > li:hover .NavBarList > li::after {
-  top: 0.7em;
-  border-color: transparent transparent #ffb600;
+.NavBarList > li:hover::after {
+  border-color: #ffb600 transparent transparent transparent;
 }
 
 .NavBarList > li > a:hover {
@@ -107,17 +106,54 @@ body {
 }
 
 .Login_Btn {
+  display: inline-block;
+  position: relative;
   background-color: #ffb600;
   color: #23282d;
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
   height: 40px;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0.3em 0.5em 0.5em 0.5em;
+}
+
+.Login_Btn > li {
+  list-style-type: none;
+  display: none;
+  text-align: right;
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  height: 30px;
+  align-items: center;
+  align-content: center;
+}
+
+.Login_Btn > li > a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #23282d;
+  padding: 0.3em 2em 0.5em 1.5em;
 }
 
 .Login_Btn:hover {
   color: #ffb600;
   background-color: #23282d;
+}
+
+.Login_Btn:hover > li {
+  display: block;
+  background-color: #ffb600;
+  color: #23282d;
 }
 
 .SearchServices {
