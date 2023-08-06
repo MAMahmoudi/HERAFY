@@ -1,6 +1,6 @@
 <?php
 
-class Restaurant_User
+class Company_User
 {
     use Model;
 

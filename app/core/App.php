@@ -16,11 +16,11 @@ class App
     public function __construct()
     {
         $url = $this->parseUrl();
-        //print_r($url) ;
+        // print_r($url);
         if (isset($url[0])) {
             //concatenation to get the full path and check if the controller exists
             // which is in $url[0]
-            if (file_exists('./app/controllers/' . ucfirst($url[0]) . '.php')) {
+            if (file_exists('../app/controllers/' . ucfirst($url[0]) . '.php')) {
 
                 //Replace with a new instance of this->controller
                 $this->controller = ucfirst($url[0]);

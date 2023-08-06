@@ -5,7 +5,7 @@
 
     <nav>
         <ul class="NavBarList">
-            <li><a href="#">الرئيسية</a>
+            <li><a href="<?= My_Files_Root ?>">الرئيسية</a>
                 <ul class="DropDownMenu">
                     <li><a href="#">الرئيسية</a></li>
                     <li><a href="#">الرئيسية</a></li>
@@ -44,8 +44,8 @@
     </nav>
     <button class="Login_Btn">تسجيل الدخول
         <ul class="Login_List">
-            <li><a href="#">حرفي</a></li>
-            <li><a href="#">شركة</a></li>
+            <li><a href="<?= My_Files_Root ?>Register_Account">حرفي</a></li>
+            <li><a href="<?= My_Files_Root ?>Register_Company">شركة</a></li>
         </ul>
     </button>
 

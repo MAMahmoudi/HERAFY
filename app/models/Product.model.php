@@ -1,6 +1,6 @@
 <?php
 
-class Dish  // Dish
+class Product  // Dish
 {
     use Model;
     protected $My_Table = 'tabaq';
