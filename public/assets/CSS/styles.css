@@ -417,6 +417,35 @@ hr {
   right: 0;
 }
 
+#Back_Top {
+  position: fixed;
+  bottom: 2em;
+  right: 3em;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #313943;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
+#Back_Top.visible {
+  opacity: 1;
+}
+
+#Back_Top:hover {
+  background-color: #fff;
+  padding: 1em 3em;
+}
+
 .UserSpace {
   display: flex;
   background-color: #f2edf3;

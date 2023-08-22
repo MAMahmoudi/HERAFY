@@ -25,7 +25,7 @@
         <section class="Services">
 
             <div class="SearchServices">
-                <input type="text" placeholder="Search for your favorite restaurant or dish" class="SearchServicesTxtField">
+                <input type="text" placeholder="Looking for a craftsman service...Start here!" class="SearchServicesTxtField">
             </div>
 
             <div class="MostSearchedServices">
@@ -61,7 +61,7 @@
     </main>
     <?php include("../app/views/Footer.php"); ?>
 
-    <script src="<?= My_Files_Root ?>assets/js/script.js"></script>
+    <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>
 
 </body>
 
