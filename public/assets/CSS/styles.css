@@ -188,6 +188,7 @@ body {
 .SearchServices {
   position: static;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   position: relative;
@@ -208,6 +209,17 @@ body {
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.AutoComplete_Results {
+  float: left;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
+  z-index: 1000;
+  border: 1px solid #f2f2f2;
+  box-shadow: 10px 10px 20px #888888;
 }
 
 .MostSearchedServices {
@@ -533,4 +545,8 @@ hr {
   color: red;
   font-size: 12px;
   margin-left: 10px;
+}
+
+#AutoComplete_Results {
+  display: none;
 }

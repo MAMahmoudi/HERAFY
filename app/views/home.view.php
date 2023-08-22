@@ -25,7 +25,8 @@
         <section class="Services">
 
             <div class="SearchServices">
-                <input type="text" placeholder="Looking for a craftsman service...Start here!" class="SearchServicesTxtField">
+                <input type="text" placeholder="Looking for a craftsman service...Start here!" class="SearchServicesTxtField" id="SearchServicesTxtField">
+                <ul id="AutoComplete_Results" class="AutoComplete_Results"></ul>
             </div>
 
             <div class="MostSearchedServices">
