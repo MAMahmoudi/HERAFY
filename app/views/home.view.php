@@ -17,8 +17,20 @@
     <main>
 
         <section class="Cover">
-            <div>
-                <img src="<?= My_Files_Root ?>assets/images/nadjar.jpg" alt="background" height="600px" width="100%">
+            <div class="Slides_Container_Div">
+                <img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%">
+
+                <!--
+                <ul class="Slides_Container" id="Slides_Container">
+                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%"></li>
+                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg2.jpg" alt="background" height="600px" width="100%"></li>
+                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg3.jpg" alt="background" height="600px" width="100%"></li>
+                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg4.jpg" alt="background" height="600px" width="100%"></li>
+                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg5.jpg" alt="background" height="600px" width="100%"></li>
+                </ul>
+                <a href="#" id="Previous"><img src="<?= My_Files_Root ?>assets/images/arrow-left-out.svg" alt="Previous"></a>
+                <a href="#" id="Next"><img src="<?= My_Files_Root ?>assets/images/arrow-right-out.svg" alt="Next"></a>
+                -->
             </div>
         </section>
 

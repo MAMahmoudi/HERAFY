@@ -258,6 +258,7 @@ body {
 }
 
 .Cover {
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -551,3 +552,45 @@ hr {
   background-color: #ff7800;
   color: white;
 }
+/*
+.Slides_Container_Div {
+  position: relative;
+}
+
+.Slides_Container {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  left: 10%;
+}
+
+.Slide {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.Slide.Animated {
+  -webkit-transition: left 0.3s ease-in;
+  transition: left 0.3s ease-in;
+}
+
+#Previous,
+#Next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999999;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+*/
