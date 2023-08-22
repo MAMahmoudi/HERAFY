@@ -9,6 +9,7 @@ IsFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1,
 Search_Craftsman_Service = document.getElementById('SearchServicesTxtField'),
 AutoComplete_Results = document.getElementById('AutoComplete_Results'),
 Matches = [],
+Result_Cursor = 0,
 Service_List = ['Plumber', 'Electrician', 'Carpenter', 'Painter', 'Mason', 'Welder', 'Mechanic', 'Gardener', 'Cleaner', 'Cook', 'Driver', 'Security Guard', 'Baby Sitter', 'Nurse', 'Tutor', 'Beautician', 'Hair Dresser', 'Tailor', 'Laundry', 'Other'];
 
 // Calculate the document height
@@ -46,6 +47,27 @@ Search_Craftsman_Service.addEventListener('keyup', function (event) {
     }
 }
 
+    switch (event.key) {
+        case 'ArrowUp':
+            if (Result_Cursor > 0) {
+                Result_Cursor--;
+                Move_Cursor(Result_Cursor);
+            }
+            break;
+        case 'ArrowDown':
+            if (Result_Cursor < AutoComplete_Results.children.length - 1) {
+                Result_Cursor++;
+                Move_Cursor(Result_Cursor);
+            }
+            break;
+        case 'Enter':
+            SearchServicesTxtField.value = AutoComplete_Results.children[Result_Cursor].innerHTML;
+            Toggle_AutoComplete_Results("Hide");
+            Result_Cursor = 0;
+            break;
+    }
+
+
     /*
     var i;
     if (event.keyCode === 13) {
@@ -81,5 +103,15 @@ function Display_Matches(Matched_Services) {
     for (j = 0; j < Matched_Services.length; j++) {
         AutoComplete_Results.innerHTML += '<li class="AutoComplete_Result_Items">' + Matched_Services[j] + '</li>';
     }
+
+    Move_Cursor(Result_Cursor);
+
     Toggle_AutoComplete_Results("Show");
+}
+
+function Move_Cursor(Position) {
+    for (var x=0; x < AutoComplete_Results.children.length; x++) {
+        AutoComplete_Results.children[x].classList.remove('AutoComplete_Result_Items_Selected');
+    }
+    AutoComplete_Results.children[Position].classList.add('AutoComplete_Result_Items_Selected');
 }

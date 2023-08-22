@@ -547,6 +547,7 @@ hr {
   margin-left: 10px;
 }
 
-#AutoComplete_Results {
-  display: none;
+.AutoComplete_Result_Items_Selected {
+  background-color: #ff7800;
+  color: white;
 }
