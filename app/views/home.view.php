@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/swiper-bundle.min.css" />
     <title>Foodz</title>
 </head>
 
@@ -18,19 +19,25 @@
 
         <section class="Cover">
             <div class="Slides_Container_Div">
-                <img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%">
+                <div class="Slider">
+                    <button class="Slides_Previous_Btn" id="Slides_Previous_Btn"><img src="<?= My_Files_Root ?>assets/images/arrow-left-over.svg" alt="Previous"></button>
+                    <div class="Slides_Container">
+                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%"></div>
+                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg2.jpg" alt="background" height="600px" width="100%"></div>
+                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg3.jpg" alt="background" height="600px" width="100%"></div>
+                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg4.jpg" alt="background" height="600px" width="100%"></div>
+                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg5.jpg" alt="background" height="600px" width="100%"></div>
+                    </div>
+                    <button class="Slides_Next_Btn" id="Slides_Next_Btn"><img src="<?= My_Files_Root ?>assets/images/arrow-right-over.svg" alt="Next"></button>
+                    <!-- If we need pagination 
+                    <div class="swiper-pagination"></div>
+-->
+                    <!-- If we need navigation buttons -->
 
-                <!--
-                <ul class="Slides_Container" id="Slides_Container">
-                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%"></li>
-                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg2.jpg" alt="background" height="600px" width="100%"></li>
-                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg3.jpg" alt="background" height="600px" width="100%"></li>
-                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg4.jpg" alt="background" height="600px" width="100%"></li>
-                    <li class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg5.jpg" alt="background" height="600px" width="100%"></li>
-                </ul>
-                <a href="#" id="Previous"><img src="<?= My_Files_Root ?>assets/images/arrow-left-out.svg" alt="Previous"></a>
-                <a href="#" id="Next"><img src="<?= My_Files_Root ?>assets/images/arrow-right-out.svg" alt="Next"></a>
-                -->
+
+
+                </div>
+
             </div>
         </section>
 
@@ -75,6 +82,9 @@
     <?php include("../app/views/Footer.php"); ?>
 
     <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>
+    <script src="<?= My_Files_Root ?>assets/JS/swiper-bundle.min.js"></script>
+
+
 
 </body>
 

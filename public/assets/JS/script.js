@@ -1,6 +1,8 @@
 //alert('ana JavaScript');
 
 var Back_Top = document.getElementById("Back_Top"),
+  Slides_Previous_Btn = document.getElementById("Slides_Previous_Btn"),
+  Slides_Next_Btn = document.getElementById("Slides_Next_Btn"),
   Body = document.body,
   Doc_Element = document.documentElement,
   Offset = 100,
@@ -12,12 +14,13 @@ var Back_Top = document.getElementById("Back_Top"),
   AutoComplete_Results = document.getElementById("AutoComplete_Results"),
   Matches = [],
   Result_Cursor = 0,
-  Slides = document.getElementsByClassName("Slides"),
+  //Slides = document.getElementsByClassName("Slides"),
   Slides_Container = document.getElementById("Slides_Container"),
   Cursor = 0,
+  Counter = 0,
   Slides_Width = 0,
   Top_Height = 0,
-  Slides_Count = Slides.length,
+  //Slides_Count = Slides.length,
   Service_List = [
     "Plumber",
     "Electrician",
@@ -39,7 +42,28 @@ var Back_Top = document.getElementById("Back_Top"),
     "Tailor",
     "Laundry",
     "Other",
-  ];
+  ],
+  Slides = document.querySelectorAll(".Slide");
+
+Slides.forEach((Slide, index) => {
+  Slide.style.left = index * 100 + "%";
+});
+const Slide_Images = () => {
+  Slides.forEach((Slide) => {
+    Slide.style.transform = "translateX(-" + Counter * 100 + "%)";
+  });
+};
+
+Slides_Previous_Btn.addEventListener("click", function (event) {
+  if (Counter <= 0) return;
+  Counter--;
+  Slide_Images();
+});
+Slides_Next_Btn.addEventListener("click", function (event) {
+  if (Counter >= Slides.length - 1) return;
+  Counter++;
+  Slide_Images();
+});
 
 // Calculate the document height
 Doc_Height = Math.max(
@@ -102,17 +126,6 @@ Search_Craftsman_Service.addEventListener("keyup", function (event) {
       Result_Cursor = 0;
       break;
   }
-
-  /*
-    var i;
-    if (event.keyCode === 13) {
-        event.preventDefault();
-        for (i = 0; i < Service_List.length; i++) {
-            if (Search_Craftsman_Service.value === Service_List[i]) {
-                window.location.href = 'http://localhost:3000/Service/' + Service_List[i];
-            }
-        }
-    }*/
 });
 
 function Toggle_AutoComplete_Results(Action) {
@@ -157,6 +170,7 @@ function Move_Cursor(Position) {
     "AutoComplete_Result_Items_Selected"
   );
 }
+
 /*
 if (Slides_Count > 0) {
   Slides_Width = Slides[0].offsetWidth;

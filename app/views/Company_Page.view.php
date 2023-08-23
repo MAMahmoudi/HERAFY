@@ -11,7 +11,7 @@
 
 <body>
     <?php
-    include("Header.php");
+    include("../app/views/Header.php");
 
     ?>
 
@@ -92,9 +92,11 @@
         </div>
 
     </main>
-    <?php
-    include("Footer.php");
-    ?>
+
+    <?php include("../app/views/Footer.php"); ?>
+
+    <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>
+
 </body>
 
 </html>

@@ -195,6 +195,7 @@ body {
   width: 60%;
   height: 100px;
   margin-top: -100px;
+  z-index: 1000;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   box-shadow: 10px 10px 20px #888888;
@@ -552,25 +553,34 @@ hr {
   background-color: #ff7800;
   color: white;
 }
-/*
+
 .Slides_Container_Div {
-  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #222;
+}
+
+.Slider {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  width: 100%;
 }
 
 .Slides_Container {
   position: relative;
   overflow: hidden;
-  width: 80%;
-  left: 10%;
+  width: 100%;
 }
 
 .Slide {
   position: absolute;
-  width: 100%;
+  width: 100%; /*
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
   text-align: center;
+  transition: 1s;
 }
 
 .Slide.Animated {
@@ -578,19 +588,9 @@ hr {
   transition: left 0.3s ease-in;
 }
 
-#Previous,
-#Next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 999999;
-  display: inline-block;
-  height: 5em;
-  width: 5em;
-  border-radius: 50%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+.Slides_Next_Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
-*/
