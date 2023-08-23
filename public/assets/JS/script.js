@@ -45,6 +45,7 @@ var Back_Top = document.getElementById("Back_Top"),
   ],
   Slides = document.querySelectorAll(".Slide");
 
+//Sliding Images in Home Page--begin
 Slides.forEach((Slide, index) => {
   Slide.style.left = index * 100 + "%";
 });
@@ -64,6 +65,7 @@ Slides_Next_Btn.addEventListener("click", function (event) {
   Counter++;
   Slide_Images();
 });
+//Sliding Images in Home Page--end
 
 // Calculate the document height
 Doc_Height = Math.max(
@@ -100,9 +102,11 @@ Search_Craftsman_Service.addEventListener("keyup", function (event) {
   Toggle_AutoComplete_Results("Hide");
 
   if (Search_Craftsman_Service.value.length > 0) {
-    Matches = GetMatches(this.value);
-    if (Matches.length > 0) {
-      Display_Matches(Matches);
+    if (this.value.length > 0) {
+      Matches = GetMatches(this.value);
+      if (Matches.length > 0) {
+        Display_Matches(Matches);
+      }
     }
   }
 

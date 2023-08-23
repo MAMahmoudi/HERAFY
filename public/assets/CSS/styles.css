@@ -263,6 +263,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border: none;
+  margin: 0px;
 }
 
 .Description {
@@ -557,7 +559,8 @@ hr {
 .Slides_Container_Div {
   width: 100%;
   height: 600px;
-  background-color: #222;
+  border: none;
+  margin: 0px;
 }
 
 .Slider {
@@ -565,6 +568,8 @@ hr {
   flex-direction: row;
   height: 600px;
   width: 100%;
+  border: none;
+  margin: 0px;
 }
 
 .Slides_Container {
@@ -575,10 +580,7 @@ hr {
 
 .Slide {
   position: absolute;
-  width: 100%; /*
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);*/
+  width: 100%;
   text-align: center;
   transition: 1s;
 }
@@ -588,9 +590,17 @@ hr {
   transition: left 0.3s ease-in;
 }
 
-.Slides_Next_Btn {
+.Slides_Next_Btn,
+.Slides_Previous_Btn {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-items: center;
+  z-index: 900;
+  color: white;
+  background: transparent;
+}
+
+.Slides_Previous_Btn:hover {
+  src: url(../IMAGES/arrow-left-over.svg);
 }

@@ -20,7 +20,7 @@
         <section class="Cover">
             <div class="Slides_Container_Div">
                 <div class="Slider">
-                    <button class="Slides_Previous_Btn" id="Slides_Previous_Btn"><img src="<?= My_Files_Root ?>assets/images/arrow-left-over.svg" alt="Previous"></button>
+                    <button style="background-color: white;"><img class="Slides_Previous_Btn" id="Slides_Previous_Btn" src="<?= My_Files_Root ?>assets/images/arrow-left-over.svg" alt="Previous"></button>
                     <div class="Slides_Container">
                         <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%"></div>
                         <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg2.jpg" alt="background" height="600px" width="100%"></div>
@@ -28,7 +28,7 @@
                         <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg4.jpg" alt="background" height="600px" width="100%"></div>
                         <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg5.jpg" alt="background" height="600px" width="100%"></div>
                     </div>
-                    <button class="Slides_Next_Btn" id="Slides_Next_Btn"><img src="<?= My_Files_Root ?>assets/images/arrow-right-over.svg" alt="Next"></button>
+                    <button style="background-color: white;"><img class="Slides_Next_Btn" id="Slides_Next_Btn" src="<?= My_Files_Root ?>assets/images/arrow-right-over.svg" alt="Next"></button>
                     <!-- If we need pagination 
                     <div class="swiper-pagination"></div>
 -->
