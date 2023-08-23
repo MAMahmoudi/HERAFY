@@ -197,12 +197,12 @@ body {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   box-shadow: 10px 10px 20px #888888;
+  position: relative;
 }
 
 .SearchServicesFixed {
   width: 100%;
   z-index: 500;
-
   position: fixed;
   top: 70px;
   display: flex;
@@ -227,14 +227,17 @@ body {
 }
 
 .AutoComplete_Results {
-  float: left;
   width: 400px;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   overflow-y: scroll;
   z-index: 1000;
   border: 1px solid #f2f2f2;
   box-shadow: 10px 10px 20px #888888;
+  list-style-type: none;
+  display: none;
+  position: absolute;
+  top: 100px;
 }
 
 .MostSearchedServices {
@@ -566,8 +569,7 @@ hr {
 }
 
 .AutoComplete_Result_Items_Selected {
-  background-color: #ff7800;
-  color: white;
+  border-bottom: #ffb600 2px solid;
 }
 
 .Slides_Container_Div {

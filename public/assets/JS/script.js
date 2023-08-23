@@ -79,6 +79,7 @@ if (Doc_Height != "undefined") {
   Offset = Doc_Height / 3;
 }
 
+//When scrolling...
 window.addEventListener("scroll", function (event) {
   Scroll_Position = Body.scrollTop || Doc_Element.scrollTop;
   //console.log(Scroll_Position);
