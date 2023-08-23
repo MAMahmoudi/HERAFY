@@ -3,6 +3,8 @@
 var Back_Top = document.getElementById("Back_Top"),
   Slides_Previous_Btn = document.getElementById("Slides_Previous_Btn"),
   Slides_Next_Btn = document.getElementById("Slides_Next_Btn"),
+  SearchServices = document.getElementById("SearchServices"),
+  ToolBar = document.getElementById("ToolBar"),
   Body = document.body,
   Doc_Element = document.documentElement,
   Offset = 100,
@@ -14,13 +16,11 @@ var Back_Top = document.getElementById("Back_Top"),
   AutoComplete_Results = document.getElementById("AutoComplete_Results"),
   Matches = [],
   Result_Cursor = 0,
-  //Slides = document.getElementsByClassName("Slides"),
   Slides_Container = document.getElementById("Slides_Container"),
   Cursor = 0,
   Counter = 0,
   Slides_Width = 0,
   Top_Height = 0,
-  //Slides_Count = Slides.length,
   Service_List = [
     "Plumber",
     "Electrician",
@@ -76,23 +76,22 @@ Doc_Height = Math.max(
   Doc_Element.offsetHeight
 );
 if (Doc_Height != "undefined") {
-  Offset = Doc_Height / 4;
+  Offset = Doc_Height / 3;
 }
 
 window.addEventListener("scroll", function (event) {
   Scroll_Position = Body.scrollTop || Doc_Element.scrollTop;
+  //console.log(Scroll_Position);
   Back_Top.className = Scroll_Position > Offset ? "visible" : "";
+  SearchServices.className =
+    Scroll_Position > 480 ? "SearchServicesFixed" : "SearchServices";
+  ToolBar.style.background =
+    Scroll_Position > 480 ? "rgba(0, 0, 0, 1)" : "rgba(0, 0, 0, 0.6)";
 });
 
 Back_Top.addEventListener("click", function (event) {
   event.preventDefault();
   Doc_Element.scrollTop = 0;
-  /*
-    if (IsFirefox) {
-        Doc_Element.scrollTop = 0;
-    } else {
-        Body.scrollTop = 0;
-    }*/
 });
 
 Search_Craftsman_Service.focus();
@@ -174,68 +173,3 @@ function Move_Cursor(Position) {
     "AutoComplete_Result_Items_Selected"
   );
 }
-
-/*
-if (Slides_Count > 0) {
-  Slides_Width = Slides[0].offsetWidth;
-  for (var i = 0; i < Slides_Count; i++) {
-    Slides[i].style.left = Slides_Width * i + "px";
-  }
-
-  Calculate_Tallest_Slide();
-
-  for (var i = 0; i < Slides_Count; i++) {
-    Slides[i].classList.add("Animated");
-  }
-
-  document.getElementById("Next").addEventListener("click", function (event) {
-    event.preventDefault();
-    if (Cursor < Slides_Count - 1) {
-      Move_Slides("Forward");
-      Cursor++;
-    }
-  });
-
-  document
-    .getElementById("Previous")
-    .addEventListener("click", function (event) {
-      event.preventDefault();
-      if (Cursor > 0) {
-        Move_Slides("Backward");
-        Cursor--;
-      }
-    });
-
-  window.addEventListener("resize", function (event) {
-    Slides_Width = Slides[0].offsetWidth;
-    for (var i = 0; i < Slides_Count; i++) {
-      if (i <= Cursor) {
-        Slides[i].style.left = "-" + Slides_Width * (Cursor - i) + "px";
-      } else if (i > Cursor) {
-        Slides[i].style.left = Slides_Width * (i - Cursor) + "px";
-      }
-    }
-    Calculate_Tallest_Slide();
-  });
-}
-
-function Calculate_Tallest_Slide() {
-  for (var i = 0; i < Slides_Count; i++) {
-    if (Slides[i].offsetHeight > Top_Height) {
-      Top_Height = Slides[i].offsetHeight;
-    }
-  }
-  Slides_Container.style.height = Top_Height + "px";
-}
-
-function Move_Slides(Direction) {
-  for (var i = 0; i < Slides_Count; i++) {
-    if (Direction === "Forward") {
-      Slides[i].style.left =
-        +Slides[i].style.left.replace(/[^-\d\.]/g, "") - Slides_Width + "px";
-    } else if (Direction === "Backward") {
-      Slides[i].style.left =
-        +Slides[i].style.left.replace(/[^-\d\.]/g, "") + Slides_Width + "px";
-    }
-  }
-}*/
