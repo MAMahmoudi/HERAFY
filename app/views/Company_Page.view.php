@@ -46,206 +46,61 @@
                 </div>
                 <div class="TimeLine">
                     <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
+                        <div>
+                            <img class="Post_Image" id="Post_Image" src="<?= My_Files_Root ?>assets/images/projects/project1.jpg" width="300" height="200" alt="Couscous">
+                        </div>
+                        <div class="Post_Description">
                             <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate delectus in animi enim labore id! A cum voluptate, dolor accusamus eligendi, molestias omnis eos voluptatum saepe quibusdam iste sint.
                             </p>
                         </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
-                            <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
-                            </p>
-                        </div>
-                        <br>
                     </div>
 
                     <div class="Single_Post">
-                        <div><img src="<?= My_Files_Root ?>assets/images/Cuscus.jpg" width="300" height="200" style="border-radius: 30px;" alt="Couscous"></div>
-                        <hr />
-                        <div class="DishDescription">
-                            <!--
-                            <div class="DishMaker">
-                                <h3 style=" margin: 0px;">Dish Maker</h3>
-                                <h3 style=" margin: 0px; ">1st December 2023</h3>
-                            </div>
-                            <hr/>
-                            <div class="DishInfo">
-                            <h3 style=" margin: 0px;">Couscous</h3>-->
+                        <div>
+                            <img class="Post_Image" id="Post_Image" src="<?= My_Files_Root ?>assets/images/projects/project2.jpg" width="300" height="200" alt="Couscous">
+                        </div>
+                        <div class="Post_Description">
                             <p style="text-align: justify;">
-                                Couscous is a staple food throughout the Maghrebi cuisines of Algeria, Tunisia, Mauritania, Morocco, and Libya.
-                                It was integrated into French and European cuisine at the beginning of the twentieth century, through the French
-                                colonial empire and the Pieds-Noirs of Algeria. In 2020, couscous was added to UNESCO's Intangible Cultural Heritage list.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate delectus in animi enim labore id! A cum voluptate, dolor accusamus eligendi, molestias omnis eos voluptatum saepe quibusdam iste sint.
                             </p>
                         </div>
-                        <br>
                     </div>
+
+                    <div class="Single_Post">
+                        <div>
+                            <img class="Post_Image" id="Post_Image" src="<?= My_Files_Root ?>assets/images/projects/project3.jpg" width="300" height="200" alt="Couscous">
+                        </div>
+                        <div class="Post_Description">
+                            <p style="text-align: justify;">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate delectus in animi enim labore id! A cum voluptate, dolor accusamus eligendi, molestias omnis eos voluptatum saepe quibusdam iste sint.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Single_Post">
+                        <div>
+                            <img class="Post_Image" id="Post_Image" src="<?= My_Files_Root ?>assets/images/projects/project4.jpg" width="300" height="200" alt="Couscous">
+                        </div>
+                        <div class="Post_Description">
+                            <p style="text-align: justify;">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate delectus in animi enim labore id! A cum voluptate, dolor accusamus eligendi, molestias omnis eos voluptatum saepe quibusdam iste sint.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="Single_Post">
+                        <div>
+                            <img class="Post_Image" id="Post_Image" src="<?= My_Files_Root ?>assets/images/projects/project5.jpg" width="300" height="200" alt="Couscous">
+                        </div>
+                        <div class="Post_Description">
+                            <p style="text-align: justify;">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate delectus in animi enim labore id! A cum voluptate, dolor accusamus eligendi, molestias omnis eos voluptatum saepe quibusdam iste sint.
+                            </p>
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>

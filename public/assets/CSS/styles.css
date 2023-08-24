@@ -404,21 +404,6 @@ hr {
   justify-items: flex-start;
 }
 
-.DishMaker {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-.DishDescription {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 .ReadMoreBtn {
   color: rgb(9, 232, 9);
   background-color: transparent;
@@ -439,16 +424,6 @@ hr {
   color: white;
 }
 
-.DishInfo {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  margin-top: 0px;
-}
-
-.footer-section {
-  margin: 50px;
-}
 .Footer {
   background: rgba(0, 0, 0, 0.6);
   height: 10%;
@@ -668,4 +643,13 @@ hr {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.NavBarBtn {
+  background: transparent;
+}
+
+.Post_Description {
+  padding-left: 20px;
+  padding-right: 20px;
 }

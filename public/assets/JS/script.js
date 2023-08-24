@@ -55,16 +55,22 @@ const Slide_Images = () => {
   });
 };
 
-Slides_Previous_Btn.addEventListener("click", function (event) {
+Slides_Previous_Btn.addEventListener("click", Slide_Previous);
+
+function Slide_Previous(event) {
   if (Counter <= 0) return;
   Counter--;
   Slide_Images();
-});
-Slides_Next_Btn.addEventListener("click", function (event) {
+}
+
+Slides_Next_Btn.addEventListener("click", Slide_Next);
+
+function Slide_Next(event) {
   if (Counter >= Slides.length - 1) return;
   Counter++;
   Slide_Images();
-});
+}
+
 //Sliding Images in Home Page--end
 
 // Calculate the document height
