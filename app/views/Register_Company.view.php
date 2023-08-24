@@ -30,6 +30,8 @@
 
         </form>
     </div>
+    <a href="<?= My_Files_Root ?>Company_Page">Company Page</a>
+
 
     <?php include("../app/views/Footer.php"); ?>
 

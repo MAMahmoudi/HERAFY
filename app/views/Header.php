@@ -48,8 +48,4 @@
             <li><a href="<?= My_Files_Root ?>Register_Company">شركة</a></li>
         </ul>
     </button>
-
-
-
-
 </header>

@@ -31,6 +31,7 @@
 
         </form>
     </div>
+    <a href="<?= My_Files_Root ?>Account_Page">Account Page</a>
 
     <?php include("../app/views/Footer.php"); ?>
 

@@ -76,7 +76,7 @@ Doc_Height = Math.max(
   Doc_Element.offsetHeight
 );
 if (Doc_Height != "undefined") {
-  Offset = Doc_Height / 3;
+  Offset = Doc_Height / 4;
 }
 
 //When scrolling...
