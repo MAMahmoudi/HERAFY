@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
+    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
@@ -16,6 +18,7 @@
     ?>
 
     <main>
+        
         <!-- Cover and profile pic -->
         <div class="Cover_Image_Div">
             <div><img src="<?= My_Files_Root ?>assets/IMAGES/banner/banner1.jpg" alt="background" height="400px" width="100%"></div>

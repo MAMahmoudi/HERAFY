@@ -33,13 +33,7 @@
                     <li><a href="#">الرئيسية</a></li>
                 </ul>
             </li>
-            <li><a href="#">إتصل بنا</a>
-                <ul class="DropDownMenu">
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">الرئيسية</a></li>
-                </ul>
-            </li>
+            <li><a href="<?= My_Files_Root ?>Contact_Us">إتصل بنا</a></li>
         </ul>
     </nav>
     <button class="Login_Btn">تسجيل الدخول

@@ -3,10 +3,12 @@
 
 <head>
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
+    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>حرفي</title>
 </head>
 
 <body>
@@ -16,29 +18,10 @@
     ?>
     <main>
 
-        <section class="Cover">
-            <div class="Slides_Container_Div">
-                <div class="Slider">
-                    <img class="Slides_Previous_Btn" id="Slides_Previous_Btn" src="<?= My_Files_Root ?>assets/images/arrow-left-out.svg" alt="Previous">
-                    <div class="Slides_Container">
-                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg1.jpg" alt="background" height="600px" width="100%"></div>
-                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg2.jpg" alt="background" height="600px" width="100%"></div>
-                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg3.jpg" alt="background" height="600px" width="100%"></div>
-                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg4.jpg" alt="background" height="600px" width="100%"></div>
-                        <div class="Slide"><img src="<?= My_Files_Root ?>assets/images/slider-main/bg5.jpg" alt="background" height="600px" width="100%"></div>
-                    </div>
-                    <img class="Slides_Next_Btn" id="Slides_Next_Btn" src="<?= My_Files_Root ?>assets/images/arrow-right-out.svg" alt="Next">
-                    <!-- If we need pagination 
-                    <div class="swiper-pagination"></div>
--->
-                    <!-- If we need navigation buttons -->
+        <?php
+        include("../app/views/Slider.php");
 
-
-
-                </div>
-
-            </div>
-        </section>
+        ?>
 
         <section class="Services">
 

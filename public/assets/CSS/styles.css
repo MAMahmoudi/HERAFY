@@ -270,6 +270,10 @@ body {
   position: relative;
 }
 
+.ServiceContainer:hover {
+  transform: scale(1.3);
+}
+
 .ServiceName {
   position: absolute;
   left: 1rem;
