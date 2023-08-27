@@ -103,6 +103,8 @@
     <?php include("../app/views/Footer.php"); ?>
 
     <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>
+    <script src="<?= My_Files_Root ?>assets/JS/Image_Slider.js"></script>
+    <script src="<?= My_Files_Root ?>assets/JS/Search_Services.js"></script>
 </body>
 
 </html>
