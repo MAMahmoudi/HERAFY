@@ -30,6 +30,31 @@
                         <li>Your connections<span>52</span></li>
                     </ul>
                 </div>
+                <div class="Profile_Link">
+                    <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/items.png" alt="items">My items</a>
+                    <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/premium.png" alt="premium">Try premium</a>
+                </div>
+            </div>
+            <div class="Profile_Activity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/recent.png" alt="recent">NADJAR</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/recent.png" alt="recent">NADJAR</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/recent.png" alt="recent">NADJAR</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/recent.png" alt="recent">NADJAR</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/recent.png" alt="recent">NADJAR</a>
+                <h3>GROUPS</h3>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/group.png" alt="group">NADJAR GROUPS</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/group.png" alt="group">NADJAR GROUPS</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/group.png" alt="group">NADJAR GROUPS</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/group.png" alt="group">NADJAR GROUPS</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/hashtag.png" alt="hashtag">NADJAR GROUPS</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/hashtag.png" alt="hashtag">NADJAR GROUPS</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/hashtag.png" alt="hashtag">NADJAR GROUPS</a>
+                <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/hashtag.png" alt="hashtag">NADJAR GROUPS</a>
+                <div class="Profile_Discover_More">
+                    <a href="#">Discover More</a>
+                </div>
             </div>
         </aside>
         <!--Main-->
@@ -37,7 +62,7 @@
             <h1>Account_Page</h1>
         </main>
         <!--Left_Side_Bar-->
-        <aside class="Left_Side_Bar"></aside>
+        <aside class="Left_Side_Bar">Left_Side_Bar</aside>
     </div>
     <?php include("../app/views/Footer.php"); ?>
 
