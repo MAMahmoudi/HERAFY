@@ -1,6 +1,6 @@
 <header class="ToolBar" id="ToolBar">
     <a href=<?= My_Files_Root ?> class="Logo">
-        <img src="<?= My_Files_Root ?>assets/images/White_Logo.png" alt="Logo" height="40">
+        <img src="<?= My_Files_Root ?>assets/images/White_Logo.png" alt="Logo" height="40" id="Logo">
     </a>
 
     <nav>

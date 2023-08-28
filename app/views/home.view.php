@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Successful_Projects.css" />
+    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Account_Page.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
