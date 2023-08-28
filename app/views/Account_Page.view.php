@@ -62,7 +62,17 @@
             <h1>Account_Page</h1>
         </main>
         <!--Left_Side_Bar-->
-        <aside class="Left_Side_Bar">Left_Side_Bar</aside>
+        <aside class="Left_Side_Bar">
+            <div class="Profile_News">
+                <img src="<?= My_Files_Root ?>assets/IMAGES/more.png" alt="more" class="Profile_Info_Icon">
+                <a href="#">Lorem ipsum dolor</a>
+                <span>1d ago &middot; 10,934 readers</span>
+                <a href="#">Lorem ipsum dolor</a>
+                <span>1d ago &middot; 10,934 readers</span>
+                <a href="#">Lorem ipsum dolor</a>
+                <span>1d ago &middot; 10,934 readers</span>
+            </div>
+        </aside>
     </div>
     <?php include("../app/views/Footer.php"); ?>
 

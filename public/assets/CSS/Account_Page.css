@@ -148,3 +148,28 @@
   display: inline-block;
   margin: 10px 0;
 }
+
+.Profile_News {
+  padding: 10px 25px;
+  background: #fff;
+}
+
+.Profile_Info_Icon {
+  width: 15px;
+  float: left;
+}
+
+.Profile_News h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 30px;
+}
+
+.Profile_News a {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
