@@ -65,12 +65,39 @@
         <aside class="Left_Side_Bar">
             <div class="Profile_News">
                 <img src="<?= My_Files_Root ?>assets/IMAGES/more.png" alt="more" class="Profile_Info_Icon">
+                <h3>أخبار</h3>
                 <a href="#">Lorem ipsum dolor</a>
                 <span>1d ago &middot; 10,934 readers</span>
                 <a href="#">Lorem ipsum dolor</a>
                 <span>1d ago &middot; 10,934 readers</span>
                 <a href="#">Lorem ipsum dolor</a>
                 <span>1d ago &middot; 10,934 readers</span>
+
+                <a href="#" class="Profile_Read_More_Link">Read more</a>
+            </div>
+
+            <div class="Profile_Add">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>lmcmcmcmcmcm</p>
+                <div>
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/user-1.png" alt="user-1">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/mi-logo.png" alt="mi-logo">
+                </div>
+                <b>Brand and ssssssss</b>
+                <a href="#" class="Profile_Ad_Link">Learn more</a>
+            </div>
+            <div class="Profile_Useful_Links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help center</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+                <div class="Profile_Copyright">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/logo.png" alt="Logo">
+                    <p>HERAFY &#169; 2023. All right reserved.</p>
+                </div>
             </div>
         </aside>
     </div>

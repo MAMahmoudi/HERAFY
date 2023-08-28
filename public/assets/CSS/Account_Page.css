@@ -152,11 +152,12 @@
 .Profile_News {
   padding: 10px 25px;
   background: #fff;
+  direction: rtl;
 }
 
 .Profile_Info_Icon {
   width: 15px;
-  float: left;
+  float: right;
 }
 
 .Profile_News h3 {
@@ -172,4 +173,79 @@
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: -5px;
+}
+
+.Profile_News span {
+  font-size: 12px;
+}
+
+.Profile_News .Profile_Read_More_Link {
+  color: #045be6;
+  font-weight: 500;
+  margin: 20px 0 10px;
+}
+
+.Profile_Add {
+  background: #fff;
+  padding: 15px 25px;
+  text-align: center;
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.Profile_Add img {
+  width: 60px;
+  margin: 40px;
+  border-radius: 50%;
+}
+
+.Profile_Add small {
+  float: right;
+  font-weight: 500;
+}
+
+.Profile_Add p {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.Profile_Add b {
+  display: block;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.Profile_Ad_Link {
+  display: inline-block;
+  border: 1px solid #045be6;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: #045be6;
+  font-weight: 500;
+  margin: 20px auto 10px;
+}
+
+.Profile_Useful_Links {
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.Profile_Useful_Links a {
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+
+.Profile_Copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.Profile_Copyright img {
+  width: 50px;
+  margin-right: 4px;
 }
