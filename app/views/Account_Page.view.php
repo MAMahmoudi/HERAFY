@@ -59,7 +59,24 @@
         </aside>
         <!--Main-->
         <main class="Main">
-            <h1>Account_Page</h1>
+            <div class="Profile_Post">
+                <div class="Profile_Post_Input">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/user-1.png" alt="user-1">
+                    <textarea rows="2" placeholder="Write something"></textarea>
+                </div>
+                <div class="Profile_Post_Links">
+                    <li><img src="<?= My_Files_Root ?>assets/IMAGES/photo.png" alt="photo">Photo</li>
+                    <li><img src="<?= My_Files_Root ?>assets/IMAGES/video.png" alt="photo">Video</li>
+                    <li><img src="<?= My_Files_Root ?>assets/IMAGES/event.png" alt="photo">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="Profile_Post_Sort_By">
+                <hr>
+                <p>ترتيب حسب: <span> أعلى <img src="<?= My_Files_Root ?>assets/IMAGES/down-arrow.png" alt="down-arrow"></span></p>
+            </div>
+
+
         </main>
         <!--Left_Side_Bar-->
         <aside class="Left_Side_Bar">

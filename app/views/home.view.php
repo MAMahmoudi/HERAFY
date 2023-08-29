@@ -14,17 +14,12 @@
 </head>
 
 <body>
-    <?php
-    include("../app/views/Header.php");
 
-    ?>
+    <?php include("../app/views/Header.php"); ?>
     <main>
-
-        <?php
-        include("../app/views/Slider.php");
-
-        ?>
-
+        <!--Slider-->
+        <?php include("../app/views/Slider.php"); ?>
+        <!--Services-->
         <section class="Services">
             <div class="SearchServices" id="SearchServices">
                 <input type="text" placeholder="Looking for a craftsman service...Start here!" class="SearchServicesTxtField" id="SearchServicesTxtField">
@@ -57,7 +52,7 @@
                 </div>
             </div>
         </section>
-
+        <!--Succuessful_Projects-->
         <section class="Succuessful_Projects">
             <h1>مشاريع ناحجة</h1>
             <div class="Succuessful_Projects_Item">
@@ -68,7 +63,9 @@
                 <div className="Succuessful_Projects_Text">
                     <h2>ddddddddddddddddddd</h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vel perspiciatis deleniti hic explicabo quis eius quo fugiat blanditiis odit quod, veritatis nesciunt maiores consectetur sint reiciendis nihil fuga. Pariatur?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vel perspiciatis
+                        deleniti hic explicabo quis eius quo fugiat blanditiis odit quod, veritatis
+                        nesciunt maiores consectetur sint reiciendis nihil fuga. Pariatur?
 
                     </p>
                 </div>
@@ -81,8 +78,9 @@
                 <div className="Succuessful_Projects_Text">
                     <h2>ddddddddddddddddddd</h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vel perspiciatis deleniti hic explicabo quis eius quo fugiat blanditiis odit quod, veritatis nesciunt maiores consectetur sint reiciendis nihil fuga. Pariatur?
-
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vel perspiciatis deleniti
+                        hic explicabo quis eius quo fugiat blanditiis odit quod, veritatis nesciunt maiores
+                        consectetur sint reiciendis nihil fuga. Pariatur?
                     </p>
                 </div>
             </div>
@@ -94,13 +92,16 @@
                 <div className="Succuessful_Projects_Text">
                     <h2>ddddddddddddddddddd</h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vel perspiciatis deleniti hic explicabo quis eius quo fugiat blanditiis odit quod, veritatis nesciunt maiores consectetur sint reiciendis nihil fuga. Pariatur?
-
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vel perspiciatis
+                        deleniti hic explicabo quis eius quo fugiat blanditiis odit quod,
+                        veritatis nesciunt maiores consectetur sint reiciendis nihil fuga. Pariatur?
                     </p>
                 </div>
             </div>
         </section>
+
     </main>
+
     <?php include("../app/views/Footer.php"); ?>
 
     <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>

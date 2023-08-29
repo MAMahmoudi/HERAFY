@@ -35,6 +35,100 @@
   flex-basis: 47%;
 }
 
+.Profile_Post {
+  background: #fff;
+}
+.Profile_Post_Input {
+  padding: 20px 25px 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.Profile_Post_Input img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Profile_Post_Input textarea {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #777;
+  resize: none;
+  outline: 0;
+  direction: rtl;
+}
+
+::placeholder {
+  font-weight: 500;
+}
+
+.Profile_Post_Links {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.Profile_Post_Links li {
+  list-style: none;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  flex-basis: 25%;
+  height: 40px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Profile_Post_Links li img {
+  width: 15px;
+  margin-left: 5px;
+}
+
+.Profile_Post_Links li:last-child {
+  background: #045be6;
+  color: #fff;
+  border-top: 0;
+  border-left: 0;
+}
+
+.Profile_Post_Sort_By {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.Profile_Post_Sort_By hr {
+  flex: 1;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.Profile_Post_Sort_By p {
+  font-size: 13px;
+  padding-right: 5px;
+}
+
+.Profile_Post_Sort_By p span {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Profile_Post_Sort_By p span img {
+  width: 12px;
+  margin-right: 3px;
+}
+
+// Profile_Box
 .Profile_Box {
   background: #fff;
 }
