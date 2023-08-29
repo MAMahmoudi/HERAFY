@@ -8,6 +8,7 @@ var Back_Top = document.getElementById("Back_Top"),
   Scroll_Position,
   Doc_Height,
   Win_Height,
+  SearchServices = document.getElementById("SearchServices"),
   IsFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") > -1,
   Cursor = 0,
   Top_Height = 0;
@@ -29,8 +30,10 @@ window.addEventListener("scroll", function (event) {
   Scroll_Position = Body.scrollTop || Doc_Element.scrollTop;
   //console.log(Scroll_Position);
   Back_Top.className = Scroll_Position > Offset ? "visible" : "";
-  SearchServices.className =
-    Scroll_Position > 480 ? "SearchServicesFixed" : "SearchServices";
+  if (SearchServices != null) {
+    SearchServices.className =
+      Scroll_Position > 480 ? "SearchServicesFixed" : "SearchServices";
+  }
   ToolBar.style.background =
     Scroll_Position > 480 ? "rgba(0, 0, 0, 1)" : "rgba(0, 0, 0, 0.6)";
 });

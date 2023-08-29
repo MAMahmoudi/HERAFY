@@ -1,5 +1,5 @@
 .Account_Page {
-  padding: 20px 6%;
+  padding: 0 6% 20px 6%;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -21,14 +21,22 @@
   justify-content: space-between;
 }
 
+.Account_Page_Cover_Image {
+  margin-bottom: 20px;
+}
+
 .Left_Side_Bar {
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 73px;
 }
 
 .Right_Side_Bar {
   flex-basis: 25%;
   align-self: flex-start;
+  position: sticky;
+  top: 73px;
 }
 
 .Main {
@@ -128,6 +136,106 @@
   margin-right: 3px;
 }
 
+.Profile_Single_Post {
+  background: #fff;
+  padding: 20px 25px 5px;
+  margin: 5px 0 15px;
+}
+
+.Post_Author {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.Post_Author img {
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.Post_Author h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  direction: rtl;
+}
+
+.Post_Author small {
+  display: block;
+  margin-bottom: -2px;
+  direction: rtl;
+}
+
+.Profile_Single_Post p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  direction: rtl;
+}
+
+.Profile_Post_Stat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.Profile_Post_Stat div {
+  display: flex;
+  align-items: center;
+}
+
+.Profile_Post_Stat img {
+  width: 25px;
+  margin-left: -5px;
+}
+
+.Profile_Post_Likers {
+  margin-right: 10px;
+  direction: rtl;
+}
+
+.Profile_Post_Activity {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Profile_Post_Activity div {
+  display: flex;
+  align-items: center;
+}
+
+.Profile_Post_Activity_User_Icon {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.Profile_Post_Activity_Arrow_Icon {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.Profile_Post_Activity_Link {
+  displsy: flex;
+  flex-direction: row-reverse;
+}
+
+.Profile_Post_Activity_Link img {
+  width: 15px;
+  margin-left: 8px;
+}
+
 // Profile_Box
 .Profile_Box {
   background: #fff;
@@ -136,6 +244,7 @@
 .Profile_Info {
   padding: 0 25px;
   direction: rtl;
+  background: #fff;
 }
 
 .Profile_Info img {

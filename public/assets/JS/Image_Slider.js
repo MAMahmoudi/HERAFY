@@ -1,6 +1,5 @@
 var Slides_Previous_Btn = document.getElementById("Slides_Previous_Btn"),
   Slides_Next_Btn = document.getElementById("Slides_Next_Btn"),
-  SearchServices = document.getElementById("SearchServices"),
   Slides_Container = document.getElementById("Slides_Container"),
   Slides_Width = 0,
   Counter = 0,
