@@ -28,14 +28,14 @@ if (Doc_Height != "undefined") {
 //When scrolling...
 window.addEventListener("scroll", function (event) {
   Scroll_Position = Body.scrollTop || Doc_Element.scrollTop;
-  //console.log(Scroll_Position);
+  console.log(Scroll_Position);
   Back_Top.className = Scroll_Position > Offset ? "visible" : "";
+  ToolBar.style.background =
+    Scroll_Position > 480 ? "rgba(0, 0, 0, 1)" : "rgba(0, 0, 0, 0.6)";
   if (SearchServices != null) {
     SearchServices.className =
       Scroll_Position > 480 ? "SearchServicesFixed" : "SearchServices";
   }
-  ToolBar.style.background =
-    Scroll_Position > 480 ? "rgba(0, 0, 0, 1)" : "rgba(0, 0, 0, 0.6)";
 });
 
 Back_Top.addEventListener("click", function (event) {
