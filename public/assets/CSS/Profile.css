@@ -56,3 +56,15 @@
   color: #045be6;
   font-weight: 500;
 }
+
+.Profile_Page_Mutual_Connection {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.Profile_Page_Mutual_Connection img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}

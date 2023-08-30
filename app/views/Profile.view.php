@@ -25,6 +25,10 @@
                 <h1>John Doe</h1>
                 <b>Plumber at Lorem ipsum dolor sit amet, consectetur adipisicing </b>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing <a href="#">Contact info</a> </p>
+                <div class="Profile_Page_Mutual_Connection">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/user-2.png" alt="user-2">
+                    <span>1 mutual connection: Kadour Hamdani</span>
+                </div>
             </div>
 
         </main>
