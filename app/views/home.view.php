@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
+    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Header.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Successful_Projects.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Account_Page.css" />

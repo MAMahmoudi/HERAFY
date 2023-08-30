@@ -1,0 +1,182 @@
+.ToolBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.Login_Btn {
+  display: inline-block;
+  position: relative;
+  background-color: #ffb600;
+  color: #23282d;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  height: 35px;
+  width: 130px;
+  align-items: center;
+  align-content: center;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Login_Btn::after {
+  content: "";
+  position: absolute;
+  right: 0em;
+  top: 1em;
+  border: 0.3em solid;
+  border-color: transparent #23282d transparent transparent;
+}
+
+.Login_Btn:hover::after {
+  border-color: #ffb600 transparent transparent transparent;
+}
+
+.Login_Btn:hover {
+  color: #ffb600;
+  background-color: #23282d;
+  border-bottom: #ffb600 2px solid;
+}
+
+.Login_Btn:hover .Login_List {
+  display: block;
+  background-color: #ffb600;
+  color: #23282d;
+}
+
+.Login_List {
+  list-style-type: none;
+  display: none;
+  z-index: 1000;
+  width: 60%;
+  position: absolute;
+  z-index: 1000;
+  background: #ffb600;
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.Login_List > li {
+  display: block;
+  background-color: #ffb600;
+  color: #23282d;
+  height: 40px;
+  padding: 0.3em 0.3em;
+  margin: 0px;
+}
+
+.Login_List > li > a:hover {
+  background-color: #23282d;
+  color: #ffb600;
+  border-bottom: #ffb600 2px solid;
+}
+
+.Login_List > li > a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #23282d;
+  padding: 0.3em 1em;
+}
+
+.NavBarList {
+  display: flex;
+  list-style-type: none;
+  direction: rtl;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.NavBarList > li {
+  margin-top: 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.NavBarList > li > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.3em 2em 0.5em 1.5em;
+}
+
+.NavBarList > li::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border: 0.3em solid;
+  border-color: transparent #ffb600 transparent transparent;
+}
+
+.NavBarList > li:hover .DropDownMenu {
+  display: block;
+}
+
+.NavBarList > li:hover::after {
+  border-color: #ffb600 transparent transparent transparent;
+}
+
+.NavBarList > li > a:hover {
+  border-bottom: #ffb600 2px solid;
+}
+
+.NavBarList > li > ul {
+  list-style-type: none;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.DropDownMenu > li {
+  display: block;
+}
+
+.DropDownMenu > li > a:hover {
+  border-bottom: #ffb600 2px solid;
+}
+
+.DropDownMenu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  right: 0;
+}
+
+.DropDownMenu > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0.3em 1em;
+}
+
+.DropDownMenu > li > a > img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.Logo {
+  height: 20px;
+}

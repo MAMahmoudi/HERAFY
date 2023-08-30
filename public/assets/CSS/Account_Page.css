@@ -29,7 +29,7 @@
   position: relative;
   color: #23282d;
   cursor: pointer;
-  left: 50px;
+  right: 50px;
 }
 
 .Account_Page_Menu_Btn::after {
@@ -62,14 +62,17 @@
   display: none;
   position: absolute;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   margin: 0;
   padding: 0;
+  direction: rtl;
+  right: 0;
 }
 
 .Account_Page_Drop_Down_Menu > li > a {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: white;
   font-size: 14px;
@@ -85,7 +88,7 @@
 
 .Account_Page_Drop_Down_Menu > li > a > p {
   width: 100%;
-  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .Account_Page_Menu_Btn_Img {
