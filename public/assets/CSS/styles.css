@@ -97,12 +97,19 @@ body {
 }
 
 .DropDownMenu > li > a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
   font-size: 20px;
   font-weight: 700;
   padding: 0.3em 1em;
+}
+
+.DropDownMenu > li > a > img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
 }
 
 .Login_Btn {
@@ -113,15 +120,15 @@ body {
   font-size: 20px;
   font-weight: 700;
   cursor: pointer;
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 130px;
   align-items: center;
   align-content: center;
   list-style-type: none;
   justify-content: space-evenly;
   padding: 0.3em 0.3em 0.3em 0.3em;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .Login_Btn::after {

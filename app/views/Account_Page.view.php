@@ -17,13 +17,12 @@
     <?php include("../app/views/Header.php"); ?>
     <div class="Account_Page">
         <img src="<?= My_Files_Root ?>assets/IMAGES/slider-pages/slide-page1.jpg" width="100%" height="300px" alt="slide-page1" class="Account_Page_Cover_Image">
-
         <!--Right_Side_Bar-->
         <aside class="Right_Side_Bar">
             <div class="Profile_Box">
                 <div class="Profile_Info">
                     <img src="<?= My_Files_Root ?>assets/IMAGES/team/team1.jpg" alt="team1" id="Profile_Pic">
-                    <h1>User 1</h1>
+                    <h1>Benaouda Houari</h1>
                     <h3>Carpenter</h3>
                     <ul>
                         <li>Your profile views <span>52</span></li>
@@ -74,7 +73,7 @@
             </div>
             <div class="Profile_Post_Sort_By">
                 <hr>
-                <p>ترتيب حسب: <span> أعلى <img src="<?= My_Files_Root ?>assets/IMAGES/down-arrow.png" alt="down-arrow"></span></p>
+                <p>ترتيب حسب: <span> أعلى <img src="<?= My_Files_Root ?>assets/IMAGES/down-arrow.png" alt="down-arrow" /></span></p>
             </div>
             <div class="Profile_Single_Post">
                 <div class="Post_Author">

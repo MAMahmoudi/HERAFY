@@ -22,10 +22,76 @@
 }
 
 .Account_Page_Menu_Btn {
+  width: 60px;
+  height: 50px;
+  background: transparent;
+  display: inline-block;
+  position: relative;
+  color: #23282d;
+  cursor: pointer;
+  left: 50px;
+}
+
+.Account_Page_Menu_Btn::after {
+  content: "";
+  position: absolute;
+  right: 0em;
+  top: 1em;
+  border: 0.5em solid;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.Account_Page_Menu_Btn:hover::after {
+  border-color: #ffb600 transparent transparent transparent;
+}
+
+.Account_Page_Menu_Btn:hover .Account_Page_Drop_Down_Menu {
+  display: block;
+  margin-top: -5px;
+}
+
+.Account_Page_Drop_Down_Menu li {
+  display: inline-block;
+}
+
+.Account_Page_Drop_Down_Menu > li > a:hover {
+  border-bottom: #ffb600 2px solid;
+}
+
+.Account_Page_Drop_Down_Menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+}
+
+.Account_Page_Drop_Down_Menu > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.Account_Page_Drop_Down_Menu > li > a > img {
   width: 35px;
+  margin: 15px;
   border-radius: 50%;
-  margin-left: 10px;
-  margin-top: 5px;
+}
+
+.Account_Page_Drop_Down_Menu > li > a > p {
+  width: 100%;
+  margin-right: 50px;
+}
+
+.Account_Page_Menu_Btn_Img {
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .Account_Page_Cover_Image {
