@@ -18,7 +18,7 @@
     <?php include("../app/views/Header.php"); ?>
     <div class="Profile_Page">
         <img src="<?= My_Files_Root ?>assets/IMAGES/slider-pages/slide-page1.jpg" width="100%" height="300px" alt="slide-page1" class="Profile_Page_Cover_Image">
-
+        <!--Profile_Page_Main-->
         <main class="Profile_Page_Main">
             <div class="Profile_Page_Inner">
                 <img src="<?= My_Files_Root ?>assets/IMAGES/user-1.png" alt="user-1" class="Profile_Pic">
@@ -29,10 +29,26 @@
                     <img src="<?= My_Files_Root ?>assets/IMAGES/user-2.png" alt="user-2">
                     <span>1 mutual connection: Kadour Hamdani</span>
                 </div>
+                <div class="Profile_Page_Buttons">
+                    <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/connect.png" alt="connect">Connect</a>
+                    <a href="#"><img src="<?= My_Files_Root ?>assets/IMAGES/message.png" alt="message">Message</a>
+                </div>
             </div>
-
+            <div class="Profile_Page_Description">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Quis delectus repellendus
+                    impedit illo accusamus. Assumenda vel
+                    consectetur quaerat temporibus nam
+                    voluptatum pariatur, minus reprehenderit
+                    dignissimos saepe, porro dolore labore
+                    aliquam!
+                </p>
+            </div>
         </main>
-        <aside class="Profile_Page_Right_Side_Bar"></aside>
+        <!--Profile_Page_Left_Side_Bar-->
+        <aside class="Profile_Page_Left_Side_Bar"></aside>
     </div>
     <?php include("../app/views/Footer.php"); ?>
 

@@ -15,7 +15,7 @@
   flex-basis: 73%;
 }
 
-.Profile_Page_Right_Side_Bar {
+.Profile_Page_Left_Side_Bar {
   flex-basis: 25%;
   align-self: flex-start;
   position: sticky;
@@ -66,5 +66,28 @@
 .Profile_Page_Mutual_Connection img {
   width: 30px;
   border-radius: 50%;
+  margin-right: 5px;
+}
+
+.Profile_Page_Buttons {
+  margin: 20px 0;
+}
+
+.Profile_Page_Buttons a {
+  display: inline-flex;
+  align-items: center;
+  background: #e4e6eb;
+  padding: 6px 15px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.Profile_Page_Buttons a:first-child {
+  background: #045be6;
+  color: #fff;
+}
+
+.Profile_Page_Buttons a img {
+  width: 18px;
   margin-right: 5px;
 }
