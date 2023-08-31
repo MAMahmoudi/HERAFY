@@ -91,3 +91,102 @@
   width: 18px;
   margin-right: 5px;
 }
+
+.Profile_Page_Description {
+  direction: rtl;
+  background: #fff;
+  padding: 20px 4% 30px;
+  margin12px 0;
+}
+
+.Profile_Page_Description h2 {
+  font-weight: 600;
+  margin: 10px 0 20px;
+  color: #333;
+}
+
+.Profile_Page_Description a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.Profile_Page_Description_See_More_Link{
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+.Profile_Page_Description_Item{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.Profile_Page_Description_Item img{
+  width: 50px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.Profile_Page_Description_Item div{
+  width: 100%;
+}
+
+.Profile_Page_Description_Item h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.Profile_Page_Description_Item b{
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+}
+
+.Profile_Page_Description_Item p{
+  margin-top: 15px;
+}
+
+.Profile_Page_Description_Item hr{
+  border: 0;
+  border-bottom: 1px solid #999;
+  margin-top: 10px;
+}
+/*
+.Profile_Page_Description_Item:last-child hr{
+  display: none;
+}*/
+
+.Profile_Page_Experience_Link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  font-weight: 500;
+}
+
+.Profile_Page_Experience_Link img{
+  width: 20px;
+  margin-right: 8px;
+}
+
+.Profile_Page_Skills_Btn{
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 6px 18px;
+  border: 1px solid #777;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.Profile_Page_Languages_Btn{
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 6px 18px;
+  background: #e4e6eb;
+  font-weight: 500;
+  font-size: 12px;
+}

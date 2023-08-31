@@ -45,6 +45,119 @@
                     dignissimos saepe, porro dolore labore
                     aliquam!
                 </p>
+                <a href="#" class="Profile_Page_Description_See_More_Link">See more</a>
+            </div>
+
+            <div class="Profile_Page_Description">
+                <h2>khebra</h2>
+                <div class="Profile_Page_Description_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/microsoft.png" alt="microsoft">
+                    <div>
+                        <h3>Nadjar 3and microsoft</h3>
+                        <b>microsoft &middot; Full time</b>
+                        <b>Melbekri &middot;</b>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Quis delectus repellendus
+                            impedit illo accusamus. Assumenda vel
+                            consectetur quaerat temporibus nam
+                            voluptatum pariatur, minus reprehenderit
+                            dignissimos saepe, porro dolore labore
+                            aliquam!
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="Profile_Page_Description_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/slack.png" alt="microsoft">
+                    <div>
+                        <h3>Nadjar 3and microsoft</h3>
+                        <b>microsoft &middot; Full time</b>
+                        <b>Melbekri &middot;</b>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Quis delectus repellendus
+                            impedit illo accusamus. Assumenda vel
+                            consectetur quaerat temporibus nam
+                            voluptatum pariatur, minus reprehenderit
+                            dignissimos saepe, porro dolore labore
+                            aliquam!
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="Profile_Page_Description_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/google.png" alt="microsoft">
+                    <div>
+                        <h3>Nadjar 3and microsoft</h3>
+                        <b>microsoft &middot; Full time</b>
+                        <b>Melbekri &middot;</b>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Quis delectus repellendus
+                            impedit illo accusamus. Assumenda vel
+                            consectetur quaerat temporibus nam
+                            voluptatum pariatur, minus reprehenderit
+                            dignissimos saepe, porro dolore labore
+                            aliquam!
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="Profile_Page_Experience_Link">Show all experiences <img src="<?= My_Files_Root ?>assets/IMAGES/right-arrow.png" alt="left arrow"> </a>
+            </div>
+            <div class="Profile_Page_Description">
+                <h2>KRAYA</h2>
+                <div class="Profile_Page_Description_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/stanford.png" alt="microsoft">
+                    <div>
+                        <h3>kari fi Stanford</h3>
+                        <b>Stanford &middot; Full time</b>
+                        <b>Melbekri &middot;</b>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="Profile_Page_Description_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/north.png" alt="microsoft">
+                    <div>
+                        <h3>kari fi Stanford</h3>
+                        <b>Stanford &middot; Full time</b>
+                        <b>Melbekri &middot;</b>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="Profile_Page_Description_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/mit.png" alt="microsoft">
+                    <div>
+                        <h3>kari fi Stanford</h3>
+                        <b>Stanford &middot; Full time</b>
+                        <b>Melbekri &middot;</b>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="Profile_Page_Description">
+                <h2>Skills</h2>
+                <a href="#" class="Profile_Page_Skills_Btn">kolchi</a>
+                <a href="#" class="Profile_Page_Skills_Btn">na3raf</a>
+                <a href="#" class="Profile_Page_Skills_Btn">ndirah</a>
+                <a href="#" class="Profile_Page_Skills_Btn">t3alemt</a>
+                <a href="#" class="Profile_Page_Skills_Btn">ghir</a>
+                <a href="#" class="Profile_Page_Skills_Btn">wahdi</a>
+                <a href="#" class="Profile_Page_Skills_Btn">fi darna</a>
+                <a href="#" class="Profile_Page_Skills_Btn">ma werani</a>
+                <a href="#" class="Profile_Page_Skills_Btn">hta had</a>
+            </div>
+            <div class="Profile_Page_Description">
+                <h2>Languages</h2>
+                <a href="#" class="Profile_Page_Languages_Btn">na3raf</a>
+                <a href="#" class="Profile_Page_Languages_Btn">nahdar</a>
+                <a href="#" class="Profile_Page_Languages_Btn">ba3</a>
+                <a href="#" class="Profile_Page_Languages_Btn">loghat</a>
             </div>
         </main>
         <!--Profile_Page_Left_Side_Bar-->
