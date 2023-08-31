@@ -244,7 +244,7 @@
                 <a href="#" class="Profile_Read_More_Link">Read more</a>
             </div>
 
-            <div class="Profile_Add">
+            <div class="Profile_Ad">
                 <small>Ad &middot; &middot; &middot;</small>
                 <p>lmcmcmcmcmcm</p>
                 <div>

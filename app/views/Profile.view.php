@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Header.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
     <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Profile.css" />
+    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Account_Page.css" />
 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -161,7 +162,29 @@
             </div>
         </main>
         <!--Profile_Page_Left_Side_Bar-->
-        <aside class="Profile_Page_Left_Side_Bar"></aside>
+        <aside class="Profile_Page_Left_Side_Bar">
+            <div class="Profile_Ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>lmcmcmcmcmcm</p>
+                <div>
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/user-1.png" alt="user-1">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/mi-logo.png" alt="mi-logo">
+                </div>
+                <b>Brand and ssssssss</b>
+                <a href="#" class="Profile_Ad_Link">Learn more</a>
+            </div>
+            <div class="Profile_Page_Left_Side_Bar_People">
+                <h3>People you may know</h3>
+                <div class="Profile_Page_Left_Side_Bar_People_Item">
+                    <img src="<?= My_Files_Root ?>assets/IMAGES/user-3.png" alt="user-3">
+                    <div>
+                        <h2>Benamar Hamida</h2>
+                        <p>Chef ta3 wahd lhanout</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </div>
     <?php include("../app/views/Footer.php"); ?>
 

@@ -190,3 +190,11 @@
   font-weight: 500;
   font-size: 12px;
 }
+
+.Profile_Page_Left_Side_Bar .Profile_Ad{
+  margin:0;
+}
+
+.Profile_Page_Left_Side_Bar_People{
+  background: #fff;
+}
