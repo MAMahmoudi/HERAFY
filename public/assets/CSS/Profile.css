@@ -19,7 +19,7 @@
   flex-basis: 25%;
   align-self: flex-start;
   position: sticky;
-  top: 73%;
+  top: 73px;
 }
 
 .Profile_Page_Inner {
@@ -193,8 +193,58 @@
 
 .Profile_Page_Left_Side_Bar .Profile_Ad{
   margin:0;
+  top: 0;
 }
 
 .Profile_Page_Left_Side_Bar_People{
   background: #fff;
+  padding: 15px 25px;
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+.Profile_Page_Left_Side_Bar_People h3{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+
+.Profile_Page_Left_Side_Bar_People_Item{
+  display: flex;
+  align-items: flex-start;
+  margin: 6px 0;
+}
+
+.Profile_Page_Left_Side_Bar_People_Item img{
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.Profile_Page_Left_Side_Bar_People_Item h2{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Profile_Page_Left_Side_Bar_People_Item a{
+  display:inline-block;
+  margin: 10px 0;
+  padding: 5px 25px;
+  border: 1px solid #5f5f5f;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.Profile_Page_Bottom_Bar{
+  padding: 0 6% 30px;
+}
+
+.Profile_Page_Bottom_Bar .Profile_Useful_Links{
+  text-align: right;
+  padding: 0;
+}
+
+.Profile_Page_Bottom_Bar .Profile_Copyright{
+  justify-content: flex-end;
 }
