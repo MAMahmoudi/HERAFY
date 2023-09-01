@@ -529,3 +529,26 @@
   width: 50px;
   margin-right: 4px;
 }
+
+@media only screen and (max-width: 850px) {
+  .Account_Page {
+    padding: 15px 3%;
+  }
+
+  .Account_Page_ToolBar {
+    display: none;
+  }
+
+  .Account_Page_Menu_Btn {
+    width: 30px;
+    height: 25px;
+    right: 0px;
+  }
+
+  .Left_Side_Bar,
+  .Right_Side_Bar {
+    flex-basis: 100%;
+    position: relative;
+    top: unset;
+  }
+}

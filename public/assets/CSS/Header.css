@@ -180,3 +180,21 @@
 .Logo {
   height: 20px;
 }
+
+@media only screen and (max-width: 850px) {
+  .NavBarList {
+    display: none;
+  }
+  .Logo {
+    height: 15px;
+  }
+  .Login_Btn {
+    height: 15px;
+    width: 60px;
+    font-size: 8px;
+    font-weight: 200;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
