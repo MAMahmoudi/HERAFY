@@ -1,46 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
-    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-</head>
+<?php $Page_Title = 'صفحة شركة جديدة'; include(__DIR__ . '/Head.php'); ?>
 
 <body>
-    <?php
-    include("../app/views/Header.php");
-    ?>
-    <main>
-        <?php
-        include("../app/views/Slider.php");
-        ?>
+    <?php include(__DIR__ . '/Header.php'); ?>
+    <main class="Page_Offset Form_Page">
         <div class="Login">
-            <form class="AccountLogin" name="tasjil_safeha" method="POST" autocomplete="off">
-                <h1>Account registration</h1><br>
-                <?php if (!empty($My_Errors)) : ?>
-                    <div class="warning">
-                        <?= implode("<br>", $My_Errors) ?>
-                    </div>
-                <?php endif; ?>
-                <input type="text" placeholder="Page name" name="ism_safeha" class="Email_Password" autofocus="autofocus"><br>
-                <input type="email" placeholder="Enter your email or phone number" name="mostakhdim_safeha" class="Email_Password" required><br>
-                <input type="password" placeholder="Enter your password" name="kalimat_sir_safeha" class="Email_Password" required><br>
-                <input type="password" placeholder="Enter your password again" name="Re_kalimat_sir_safeha" class="Email_Password" required><br>
-                <button type="submit" class="LoginBtn" name="tasjil_safeha_submit">Create Page</button><br>
-
+            <form class="AccountLogin Form_Card" method="POST" action="<?= Url('Register_Company') ?>">
+                <?= Csrf_Field() ?>
+                <h1>إنشاء صفحة شركة</h1>
+                <?php include(__DIR__ . '/Form_Errors.php'); ?>
+                <input type="text" placeholder="اسم الشركة" name="name" value="<?= Old('name') ?>" class="Email_Password" required autofocus>
+                <input type="email" placeholder="البريد الإلكتروني" name="email" value="<?= Old('email') ?>" class="Email_Password" required>
+                <input type="text" placeholder="المدينة" name="city" value="<?= Old('city') ?>" class="Email_Password">
+                <input type="tel" placeholder="رقم الهاتف" name="phone" value="<?= Old('phone') ?>" class="Email_Password">
+                <input type="password" placeholder="كلمة المرور (8 أحرف على الأقل)" name="password" class="Email_Password" minlength="8" required>
+                <input type="password" placeholder="أعد كتابة كلمة المرور" name="password_confirm" class="Email_Password" minlength="8" required>
+                <button type="submit" class="LoginBtn">إنشاء الصفحة</button>
+                <p class="Form_Note">لديك حساب؟ <a href="<?= Url('Login?type=company') ?>">سجل الدخول</a></p>
             </form>
         </div>
-        <a href="<?= My_Files_Root ?>Company_Page">Company Page</a>
     </main>
 
-    <?php include("../app/views/Footer.php"); ?>
+    <?php include(__DIR__ . '/Footer.php'); ?>
 
-    <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>
+    <script src="<?= Asset('assets/JS/script.js') ?>"></script>
 </body>
 
 </html>

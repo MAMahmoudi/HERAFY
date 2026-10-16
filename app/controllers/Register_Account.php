@@ -1,26 +1,27 @@
 <?php
+
 // This is a controller
 class Register_Account extends \app\core\Controller
 {
     public function index()
     {
+        if (Is_Logged_In()) {
+            Redirect_To('Account_Page');
+        }
 
-        $My_Data = [];
-        /*
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $Restaurant_User = new Company_User;
-            $Restaurant_User->My_Table = 'Restaurant_User2';
+        $My_Data = ['Services' => (new Service)->Search_For([], 100)];
 
-            //print_r($_POST);
-            if ($Restaurant_User->Verify_My_Data($_POST)) {
-                unset($_POST['tasjil_submit']);
-                unset($_POST['Re_kalimat_sir']);
-                $Restaurant_User->Insert($_POST);
-                Redirect_to('home');
+        if (Is_Post()) {
+            Verify_Csrf();
+            $Account_User = new Account_User;
+            if ($Account_User->Verify_My_Data($_POST)) {
+                $id = $Account_User->Register($_POST);
+                Login_User('account', $Account_User->Find_By_Id($id));
+                Flash('success', 'تم إنشاء حسابك بنجاح، أكمل ملفك الشخصي ليجدك الزبائن بسهولة');
+                Redirect_To('DashBoard');
             }
-            $My_Data['My_Errors'] = $Restaurant_User->My_Errors;
-        }*/
-
+            $My_Data['My_Errors'] = $Account_User->My_Errors;
+        }
 
         $this->view('Register_Account', $My_Data);
     }

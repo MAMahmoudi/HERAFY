@@ -1,32 +1,16 @@
 <?php
 
-
-
 trait DataBase_Connection
 {
-    private $Connection;
-
-    private function Connect()
+    private function Connection()
     {
-        $Properties = "mysql:host=" . My_Server_Name . ";dbname=" . My_DataBase_Name . ";port=3366";
-        $opts =
-            [
-                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES => false,
-            ];
-
-        try {
-            $this->Connection  = new PDO($Properties, My_DataBase_Connection_User, My_DataBase_Connection_PassWord, $opts);
-        } catch (PDOException $e) {
-            throw new PDOException($e->getMessage(), (int)$e->getCode());
-        }
+        return \app\core\Database::Connection();
     }
 
+    // Runs a select and returns all the rows, or false when nothing was found
     public function Execute_Querry($My_Querry, $My_Data = [])
     {
-        $this->Connect();
-        $Execute_Querry = $this->Connection->prepare($My_Querry);
+        $Execute_Querry = $this->Connection()->prepare($My_Querry);
         $Executed = $Execute_Querry->execute($My_Data);
         if ($Executed) {
             $My_Results = $Execute_Querry->fetchAll(PDO::FETCH_ASSOC);
@@ -37,8 +21,21 @@ trait DataBase_Connection
         return false;
     }
 
+    // Runs an insert / update / delete and returns the number of affected rows
+    public function Execute_Statement($My_Querry, $My_Data = [])
+    {
+        $Execute_Statement = $this->Connection()->prepare($My_Querry);
+        $Execute_Statement->execute($My_Data);
+        return $Execute_Statement->rowCount();
+    }
+
+    public function Last_Insert_Id()
+    {
+        return (int)$this->Connection()->lastInsertId();
+    }
+
     public function Disconnect()
     {
-        $this->Connection->close();
+        \app\core\Database::Disconnect();
     }
 }

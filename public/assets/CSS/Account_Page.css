@@ -303,7 +303,7 @@
 }
 
 .Profile_Post_Activity_Link {
-  displsy: flex;
+  display: flex;
   flex-direction: row-reverse;
 }
 
@@ -312,7 +312,7 @@
   margin-left: 8px;
 }
 
-// Profile_Box
+/* Profile_Box */
 .Profile_Box {
   background: #fff;
 }

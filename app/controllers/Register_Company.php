@@ -1,25 +1,27 @@
 <?php
+
 // This is a controller
 class Register_Company extends \app\core\Controller
 {
     public function index()
     {
-        $My_Data = [];
-        /*
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $Company_User = new Company_User;
-            $Company_User->My_Table = 'Company_User2';
+        if (Is_Logged_In()) {
+            Redirect_To('Account_Page');
+        }
 
-            print_r($_POST);
+        $My_Data = [];
+
+        if (Is_Post()) {
+            Verify_Csrf();
+            $Company_User = new Company_User;
             if ($Company_User->Verify_My_Data($_POST)) {
-                unset($_POST['tasjil_safeha_submit']);
-                unset($_POST['Re_kalimat_sir_safeha']);
-                $Company_User->Insert($_POST);
-                Redirect_to('raisia_safeha');
+                $id = $Company_User->Register($_POST);
+                Login_User('company', $Company_User->Find_By_Id($id));
+                Flash('success', 'تم إنشاء صفحة شركتك بنجاح، أضف شعارك ووصف نشاطك');
+                Redirect_To('DashBoard');
             }
             $My_Data['My_Errors'] = $Company_User->My_Errors;
         }
-        */
 
         $this->view('Register_Company', $My_Data);
     }

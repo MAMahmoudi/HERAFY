@@ -1,107 +1,97 @@
-var Search_Craftsman_Service = document.getElementById(
-    "SearchServicesTxtField"
-  ),
+// Auto complete of the search field of the home page.
+// The list of services comes from the database (data-services attribute).
+var Search_Craftsman_Service = document.getElementById("SearchServicesTxtField"),
   AutoComplete_Results = document.getElementById("AutoComplete_Results"),
+  Service_List = [],
   Matches = [],
-  Result_Cursor = 0,
-  Service_List = [
-    "Plumber",
-    "Electrician",
-    "Carpenter",
-    "Painter",
-    "Mason",
-    "Welder",
-    "Mechanic",
-    "Gardener",
-    "Cleaner",
-    "Cook",
-    "Driver",
-    "Security Guard",
-    "Baby Sitter",
-    "Nurse",
-    "Tutor",
-    "Beautician",
-    "Hair Dresser",
-    "Tailor",
-    "Laundry",
-    "Other",
-  ];
-Search_Craftsman_Service.focus();
+  Result_Cursor = 0;
 
-Search_Craftsman_Service.addEventListener("keyup", function (event) {
-  AutoComplete_Results.innerHTML = "";
-  Toggle_AutoComplete_Results("Hide");
+if (Search_Craftsman_Service && AutoComplete_Results) {
+  try {
+    Service_List = JSON.parse(Search_Craftsman_Service.getAttribute("data-services")) || [];
+  } catch (error) {
+    Service_List = [];
+  }
 
-  if (Search_Craftsman_Service.value.length > 0) {
-    if (this.value.length > 0) {
-      Matches = GetMatches(this.value);
-      if (Matches.length > 0) {
-        Display_Matches(Matches);
-      }
+  Search_Craftsman_Service.addEventListener("input", function () {
+    Result_Cursor = 0;
+    Matches = this.value.trim().length > 0 ? GetMatches(this.value.trim()) : [];
+    Display_Matches(Matches);
+  });
+
+  Search_Craftsman_Service.addEventListener("keydown", function (event) {
+    if (!Matches.length || AutoComplete_Results.style.display !== "block") {
+      return;
     }
-  }
+    switch (event.key) {
+      case "ArrowUp":
+        event.preventDefault();
+        Result_Cursor = Math.max(0, Result_Cursor - 1);
+        Move_Cursor(Result_Cursor);
+        break;
+      case "ArrowDown":
+        event.preventDefault();
+        Result_Cursor = Math.min(Matches.length - 1, Result_Cursor + 1);
+        Move_Cursor(Result_Cursor);
+        break;
+      case "Enter":
+        event.preventDefault();
+        Open_Service(Matches[Result_Cursor]);
+        break;
+      case "Escape":
+        Toggle_AutoComplete_Results("Hide");
+        break;
+    }
+  });
 
-  switch (event.key) {
-    case "ArrowUp":
-      if (Result_Cursor > 0) {
-        Result_Cursor--;
-        Move_Cursor(Result_Cursor);
-      }
-      break;
-    case "ArrowDown":
-      if (Result_Cursor < AutoComplete_Results.children.length - 1) {
-        Result_Cursor++;
-        Move_Cursor(Result_Cursor);
-      }
-      break;
-    case "Enter":
-      SearchServicesTxtField.value =
-        AutoComplete_Results.children[Result_Cursor].innerHTML;
+  // Hide the list when clicking somewhere else
+  document.addEventListener("click", function (event) {
+    if (event.target !== Search_Craftsman_Service) {
       Toggle_AutoComplete_Results("Hide");
-      Result_Cursor = 0;
-      break;
-  }
-});
+    }
+  });
+}
 
 function Toggle_AutoComplete_Results(Action) {
-  if (Action === "Show") {
-    AutoComplete_Results.style.display = "block";
-  } else if (Action === "Hide") {
-    AutoComplete_Results.style.display = "none";
-  }
+  AutoComplete_Results.style.display = Action === "Show" ? "block" : "none";
 }
 
 function GetMatches(Search_Text) {
-  var Matched_Services = [];
-  for (var i = 0; i < Service_List.length; i++) {
-    if (
-      Service_List[i].toLowerCase().indexOf(Search_Text.toLowerCase()) != -1
-    ) {
-      Matched_Services.push(Service_List[i]);
-    }
-  }
-  return Matched_Services;
+  Search_Text = Search_Text.toLowerCase();
+  return Service_List.filter(function (Service) {
+    return (
+      Service.name.toLowerCase().indexOf(Search_Text) !== -1 ||
+      Service.slug.toLowerCase().indexOf(Search_Text) !== -1
+    );
+  });
 }
 
 function Display_Matches(Matched_Services) {
-  var j;
-  for (j = 0; j < Matched_Services.length; j++) {
-    AutoComplete_Results.innerHTML +=
-      '<li class="AutoComplete_Result_Items">' + Matched_Services[j] + "</li>";
+  AutoComplete_Results.innerHTML = "";
+  if (!Matched_Services.length) {
+    Toggle_AutoComplete_Results("Hide");
+    return;
   }
-
+  Matched_Services.forEach(function (Service) {
+    var Item = document.createElement("li");
+    Item.className = "AutoComplete_Result_Items";
+    Item.textContent = Service.name;
+    Item.addEventListener("click", function () {
+      Open_Service(Service);
+    });
+    AutoComplete_Results.appendChild(Item);
+  });
   Move_Cursor(Result_Cursor);
-
   Toggle_AutoComplete_Results("Show");
 }
 
 function Move_Cursor(Position) {
-  for (var x = 0; x < AutoComplete_Results.children.length; x++) {
-    AutoComplete_Results.children[x].classList.remove(
-      "AutoComplete_Result_Items_Selected"
-    );
-  }
-  AutoComplete_Results.children[Position].classList.add(
-    "AutoComplete_Result_Items_Selected"
-  );
+  Array.prototype.forEach.call(AutoComplete_Results.children, function (Item, Index) {
+    Item.classList.toggle("AutoComplete_Result_Items_Selected", Index === Position);
+  });
+}
+
+function Open_Service(Service) {
+  window.location.href =
+    Search_Craftsman_Service.getAttribute("data-search-url") + "?service=" + Service.id;
 }

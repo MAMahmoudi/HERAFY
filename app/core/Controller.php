@@ -2,8 +2,6 @@
 
 namespace app\core;
 
-require_once('config.php');
-
 class Controller
 {
     public function view($view, $My_Data = [])
@@ -12,19 +10,25 @@ class Controller
             extract($My_Data);
         }
 
-        $FilePath = '../app/views/' . $view . '.view.php';
-        require_once($FilePath);
+        $FilePath = My_App_Path . '/views/' . $view . '.view.php';
+        require($FilePath);
     }
 
     public function model($model)
     {
-        $FilePath = './models/' . $model . '.php';
-        if (file_exists($FilePath)) {
-            require_once('./models/' . $model . '.php');
+        $FilePath = My_App_Path . '/models/' . $model . '.model.php';
+        if (preg_match('/^[A-Za-z_][A-Za-z0-9_]*$/', $model) && file_exists($FilePath)) {
+            require_once($FilePath);
             return new $model();
-        } else {
-            //if there is no page then route to 404 error
-            require('../app/views/404.view.php');
         }
+        return null;
+    }
+
+    // Shows the 404 page and stops
+    public function Not_Found()
+    {
+        http_response_code(404);
+        $this->view('404');
+        exit;
     }
 }

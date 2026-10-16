@@ -1,0 +1,750 @@
+/* Components shared by every page (loaded after the other style sheets) */
+
+* {
+  font-family: "Poppins", "Cairo", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  color: #03632e;
+}
+
+/* Pages without the slider start under the fixed tool bar */
+.Page_Offset {
+  padding-top: 90px;
+  min-height: 70vh;
+}
+
+/* ---------- Header ---------- */
+
+.Login_Btn {
+  width: auto;
+  min-width: 130px;
+  white-space: nowrap;
+  direction: rtl;
+  text-align: center;
+  padding-right: 1.2em;
+}
+
+.Login_Btn_User {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+
+.Login_Btn_User img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Login_List {
+  width: 100%;
+  margin-top: 0;
+  right: 0;
+}
+
+.Login_List > li {
+  height: auto;
+  padding: 0;
+}
+
+.Login_List > li > a,
+.Login_List button {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  text-align: right;
+}
+
+.Login_List button {
+  background: none;
+  border: none;
+  color: #23282d;
+  font-weight: 700;
+  padding: 0.3em 1em;
+  cursor: pointer;
+}
+
+.Login_List button:hover {
+  background-color: #23282d;
+  color: #ffb600;
+}
+
+/* ---------- Flash messages ---------- */
+
+.Flash_Messages {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+  width: min(90%, 500px);
+  direction: rtl;
+  transition: opacity 0.5s;
+}
+
+.Flash {
+  padding: 12px 18px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.Flash_success {
+  background: #e3f6ea;
+  color: #03632e;
+  border-right: 5px solid #03632e;
+}
+
+.Flash_error {
+  background: #fdeaea;
+  color: #a61b1b;
+  border-right: 5px solid #a61b1b;
+}
+
+/* ---------- Forms ---------- */
+
+.Form_Page .Login {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Form_Card {
+  direction: rtl;
+}
+
+.AccountLogin.Form_Card {
+  height: auto;
+  width: min(100%, 420px);
+  margin: 20px auto 50px;
+  padding: 30px;
+  gap: 12px;
+}
+
+.AccountLogin .Email_Password {
+  width: 100%;
+  text-align: right;
+}
+
+.Form_Errors {
+  font-size: 14px;
+  direction: rtl;
+  margin: 0 0 10px;
+}
+
+.Form_Errors p {
+  margin: 4px 0;
+}
+
+.Form_Note {
+  font-size: 14px;
+}
+
+.Type_Switch {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.Inline_Btn {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  line-height: 40px;
+  padding: 0 24px;
+}
+
+.Small_Btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.Link_Btn {
+  background: none;
+  border: none;
+  color: #045be6;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+.Link_Btn.Danger {
+  color: #a61b1b;
+}
+
+/* ---------- Home ---------- */
+
+.SearchServices .SearchServicesTxtField {
+  width: min(90%, 400px);
+}
+
+.AutoComplete_Results {
+  height: auto;
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.AutoComplete_Result_Items {
+  cursor: pointer;
+}
+
+.ServiceContainer {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.ServiceContainer:hover {
+  transform: scale(1.05);
+}
+
+.ServiceName {
+  right: 1rem;
+  left: auto;
+  padding: 4px 10px;
+}
+
+.ServiceCount {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: #ffb600;
+  color: #23282d;
+  padding: 2px 10px;
+  font-weight: 600;
+  direction: rtl;
+}
+
+.Services > h1,
+.Home_Section h1 {
+  direction: rtl;
+  text-align: center;
+}
+
+.Succuessful_Projects_Image img:only-child {
+  width: 100%;
+  position: static;
+}
+
+.Succuessful_Projects_Image {
+  z-index: 0;
+}
+
+.Succuessful_Projects_Text h2 a {
+  color: #23282d;
+  text-decoration: none;
+}
+
+.Succuessful_Projects_Text h3 {
+  direction: rtl;
+  color: #666;
+  margin-top: -10px;
+}
+
+.Home_Section {
+  margin: 4rem 6%;
+}
+
+.Companies_Strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.Companies_Strip img {
+  height: 70px;
+  max-width: 160px;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: filter 0.3s;
+}
+
+.Companies_Strip a:hover img {
+  filter: none;
+}
+
+.Join_Section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 3rem 6%;
+  background: #f2f2f2;
+  direction: rtl;
+  text-align: center;
+}
+
+.Join_Section > div {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+/* ---------- Cards ---------- */
+
+.Cards_Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  direction: rtl;
+}
+
+.Card {
+  display: block;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  color: #23282d;
+  text-decoration: none;
+  direction: rtl;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a.Card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+}
+
+.Craftsman_Card img,
+.Company_Card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Company_Card img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.Card h3 {
+  margin: 10px 0 4px;
+  font-size: 18px;
+}
+
+.Card_Subtitle {
+  color: #03632e;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Card_Meta {
+  color: #777;
+  font-size: 14px;
+  margin: 6px 0 0;
+}
+
+.Empty_State {
+  direction: rtl;
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+/* ---------- Posts ---------- */
+
+ul.Profile_Post_Links {
+  margin: 0;
+  padding: 0;
+}
+
+.Profile_Post_Links li button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.Post_Image_Label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.Post_Image_Input {
+  display: none;
+}
+
+.Post_Author {
+  position: relative;
+  direction: rtl;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.Post_Author > div {
+  text-align: right;
+}
+
+.Post_Author img {
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.Post_Author h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Post_Delete_Form {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Post_Delete_Form button {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Post_Delete_Form button:hover {
+  color: #a61b1b;
+}
+
+.Post_Picture {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.Profile_Info img {
+  height: 90px;
+  object-fit: cover;
+}
+
+.Account_Page_Cover_Image,
+.Profile_Page_Cover_Image,
+.Company_Cover {
+  object-fit: cover;
+}
+
+/* ---------- Profile ---------- */
+
+.Profile_Pic {
+  height: 150px;
+  object-fit: cover;
+}
+
+.Profile_Contact {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.Profile_Page_Buttons form {
+  display: inline-block;
+}
+
+.Profile_Page_Buttons button {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 18px;
+  border-radius: 30px;
+  border: 1px solid #045be6;
+  background: #045be6;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.Profile_Page_Buttons button img {
+  width: 15px;
+  margin-left: 6px;
+}
+
+.Profile_Page_Description p {
+  direction: rtl;
+}
+
+.Profile_Portfolio .Profile_Single_Post {
+  border: 1px solid #eee;
+}
+
+.Profile_Page_Left_Side_Bar_People_Item img {
+  height: 50px;
+  object-fit: cover;
+}
+
+/* ---------- Company page ---------- */
+
+.Cover_Image_Div .User_Pic {
+  object-fit: contain;
+  background: #fff;
+  right: 80px;
+  margin-left: 0;
+}
+
+.NavBarBtn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.NavBarBtn.Active,
+.NavBarBtn:hover {
+  background: #ffb600;
+  color: #23282d;
+}
+
+.Company_Info {
+  direction: rtl;
+  padding: 20px;
+}
+
+.LeftNavBarList {
+  list-style: none;
+  padding: 0;
+}
+
+.LeftNavBarListItems {
+  margin: 10px 0;
+  word-break: break-word;
+}
+
+.Product_Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  direction: rtl;
+  margin-bottom: 20px;
+}
+
+.Product_Form input[type="text"],
+.Product_Form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.Product_Form .Post_Btn {
+  align-self: flex-start;
+  width: auto;
+  padding: 0 20px;
+}
+
+.Products_Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  background: transparent;
+  padding: 0;
+}
+
+.Product_Card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ---------- Search ---------- */
+
+.Search_Page {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 40px;
+  direction: rtl;
+}
+
+.Search_Form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Search_Form input,
+.Search_Form select {
+  flex: 1 1 200px;
+  height: 42px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.Search_Form .LoginBtn {
+  flex: 0 0 140px;
+  margin: 0;
+}
+
+.Service_Tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.Service_Tags a {
+  text-decoration: none;
+  padding: 4px 14px;
+  border: 1px solid #03632e;
+  border-radius: 20px;
+  color: #03632e;
+}
+
+.Service_Tags a.Active,
+.Service_Tags a:hover {
+  background: #03632e;
+  color: #fff;
+}
+
+.Results_Count {
+  color: #777;
+}
+
+/* ---------- Dashboard ---------- */
+
+.DashBoard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  direction: rtl;
+}
+
+.DashBoard_Form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #f2f2f2;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.DashBoard_Form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-weight: 600;
+}
+
+.DashBoard_Form input,
+.DashBoard_Form select,
+.DashBoard_Form textarea {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.DashBoard_Images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.DashBoard_Avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.DashBoard_Cover {
+  width: 260px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.DashBoard_Form .LoginBtn {
+  width: 220px;
+  margin: 10px 0 0;
+}
+
+/* ---------- Misc ---------- */
+
+.Not_Found {
+  text-align: center;
+  direction: rtl;
+}
+
+.Not_Found h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: #ffb600;
+}
+
+.Contact_Us_Intro {
+  text-align: center;
+  direction: rtl;
+}
+
+.Footer_Copyright {
+  text-align: center;
+  color: #aaa;
+  margin: 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .Main,
+  .Left_Side_Bar,
+  .Right_Side_Bar,
+  .Profile_Page_Main,
+  .Profile_Page_Left_Side_Bar {
+    flex-basis: 100%;
+    position: static;
+  }
+
+  .MostSearchedServices {
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+
+  .UserSpace {
+    flex-direction: column;
+  }
+
+  .LeftNavBar {
+    min-height: auto;
+  }
+
+  .NavBar {
+    position: static;
+    transform: none;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .Cover_Image_Div .User_Pic {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .Contact_Us_Container form {
+    width: 100%;
+  }
+}

@@ -1,9 +1,6 @@
-# 
-Options -MultiViews
+Options -MultiViews -Indexes
 
 RewriteEngine On
-
-RewriteBase /HERAFY/public
 
 # Accept loading of actual -f files and -d directories
 # It means that if the user type a valid file name or a valid directory name ==> just open it
@@ -14,6 +11,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 # Send everything else to the index page
 # and save the rest in url
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
-
-# Except for these 
-# RewriteCond $1 !^(config|core|css|js|robots\.txt)

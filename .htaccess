@@ -1,0 +1,8 @@
+# When the whole project folder is served (e.g. XAMPP htdocs/HERAFY), send visitors to /public
+# and never expose the application code, the database or the dependencies.
+RewriteEngine On
+RewriteRule ^(app|database|tests|vendor)(/|$) - [F,L]
+RewriteRule ^(composer\.(json|lock|phar)|phpunit\.xml.*)$ - [F,L]
+RewriteRule ^$ public/ [L]
+RewriteCond %{REQUEST_URI} !/public/
+RewriteRule ^(.*)$ public/$1 [L]

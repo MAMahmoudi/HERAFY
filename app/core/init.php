@@ -2,15 +2,21 @@
 
 namespace app\core;
 
-/*
-spl_autoload_register(function ($classname) {
+require_once(__DIR__ . '/config.php');
+require_once(__DIR__ . '/utils/functions.php');
+require_once(__DIR__ . '/Database.php');
+require_once(__DIR__ . '/DataBase_Connection.php');
+require_once(__DIR__ . '/Model.php');
+require_once(__DIR__ . '/Controller.php');
+require_once(__DIR__ . '/App.php');
 
-    require("../app/models/" . ucfirst($classname) . ".model.php");
-});*/
+// Models are loaded when they are first used: new Account_User --> app/models/Account_User.model.php
+spl_autoload_register(function ($Class_Name) {
+    $File_Path = My_App_Path . '/models/' . $Class_Name . '.model.php';
+    if (preg_match('/^[A-Za-z_][A-Za-z0-9_]*$/', $Class_Name) && file_exists($File_Path)) {
+        require_once($File_Path);
+    }
+});
 
-require_once('Controller.php');
-require_once('config.php');
-require_once('../app/core/utils/functions.php');
-require_once('DataBase_Connection.php');
-require_once('Model.php');
-require_once('App.php');
+ini_set('display_errors', My_Debug ? '1' : '0');
+error_reporting(E_ALL);

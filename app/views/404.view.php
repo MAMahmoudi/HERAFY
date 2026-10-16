@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404</title>
-</head>
+<?php $Page_Title = 'الصفحة غير موجودة'; include(__DIR__ . '/Head.php'); ?>
 
 <body>
-    <h1>Error 400004</h1>
+    <?php include(__DIR__ . '/Header.php'); ?>
+    <main class="Page_Offset Not_Found">
+        <h1>404</h1>
+        <p>عذرا، الصفحة التي تبحث عنها غير موجودة.</p>
+        <a class="LoginBtn Inline_Btn" href="<?= Url() ?>">العودة إلى الرئيسية</a>
+    </main>
+    <?php include(__DIR__ . '/Footer.php'); ?>
 
+    <script src="<?= Asset('assets/JS/script.js') ?>"></script>
 </body>
 
 </html>

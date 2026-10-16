@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="ar">
 
-<head>
-    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/styles.css" />
-    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Footer.css" />
-    <link rel="stylesheet" href="<?= My_Files_Root ?>assets/CSS/Contact_Us.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>حرفي</title>
-</head>
+<?php $Page_Title = 'إتصل بنا'; $Page_Styles = ['Contact_Us']; include(__DIR__ . '/Head.php'); ?>
 
 <body>
-    <?php
-    include("../app/views/Header.php");
-
-    ?>
-    <main>
-        <?php include("../app/views/Slider.php"); ?>
+    <?php include(__DIR__ . '/Header.php'); ?>
+    <main class="Page_Offset">
         <div class="Contact_Us_Container">
             <h1>إتصل بنا</h1>
-            <form>
-                <input type="text" placeholder="الإسم" />
-                <input type="text" placeholder="البريد الإاكتروني" />
-                <input type="text" placeholder="الموضوع" />
-                <textarea placeholder="الرسالة" rows="4"></textarea>
-                <button>إرسال</button>
+            <p class="Contact_Us_Intro">سؤال، اقتراح أو مشكلة في حسابك؟ اكتب لنا وسنرد عليك عبر البريد الإلكتروني.</p>
+            <form method="POST" action="<?= Url('Contact_Us') ?>">
+                <?= Csrf_Field() ?>
+                <?php include(__DIR__ . '/Form_Errors.php'); ?>
+                <input type="text" name="name" placeholder="الإسم" value="<?= Old('name', Current_User()['name'] ?? '') ?>" required />
+                <input type="email" name="email" placeholder="البريد الإلكتروني" value="<?= Old('email') ?>" required />
+                <input type="text" name="subject" placeholder="الموضوع" value="<?= Old('subject') ?>" required />
+                <textarea name="message" placeholder="الرسالة" rows="4" required><?= Old('message') ?></textarea>
+                <button type="submit">إرسال</button>
             </form>
         </div>
-
     </main>
-    <?php include("../app/views/Footer.php"); ?>
+    <?php include(__DIR__ . '/Footer.php'); ?>
 
-    <script src="<?= My_Files_Root ?>assets/JS/script.js"></script>
+    <script src="<?= Asset('assets/JS/script.js') ?>"></script>
 </body>
 
 </html>

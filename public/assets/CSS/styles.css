@@ -46,7 +46,7 @@ body {
   background-color: white;
   text-align: center;
   font-size: 17px;
-  background-image: url(../images/search.png);
+  background-image: url(../IMAGES/search.png);
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -87,7 +87,7 @@ body {
 .ServiceContainer {
   width: 100%;
   height: 300px;
-  background-image: url("../images/services/service1.jpg");
+  background-image: url("../IMAGES/services/service1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -485,7 +485,7 @@ hr {
 @media only screen and (max-width: 850px) {
   .SearchServices {
     width:auto;
-    padding0;
+    padding: 0;
   }
   
 }
